@@ -17,6 +17,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+    working-directory: /compton-seminar
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -24,11 +25,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        
-      # Runs a single command using the runners shell
-      - name: enter the slideshow dir
-        run: echo $pwd
-
       - uses: maxheld83/pandoc@v2
         with:
           args: "--mathjax -t revealjs -s -o index.html slides.md --self-contained -V revealjs-url=./reveal.js -V theme=night"
