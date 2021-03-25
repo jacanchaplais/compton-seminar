@@ -27,7 +27,10 @@ jobs:
       - uses: docker://pandoc/core:2.9
         with:
           args: "--mathjax -t revealjs -s -o compton-seminar/index.html compton-seminar/slides.md --self-contained -V revealjs-url=compton-seminar/reveal.js -V theme=night"
-      
+      - uses: actions/upload-artifact@master
+        with:
+          name: compton-seminar/index.html
+          path: compton-seminar/index.html
       
 
 #       # Runs a set of commands using the runners shell
