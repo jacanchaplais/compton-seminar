@@ -24,14 +24,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        
+      # Runs a single command using the runners shell
+      - name: enter the slideshow dir
+        run: cd compton-seminar/
+
       - uses: maxheld83/pandoc@v2
         with:
           args: "--mathjax -t revealjs -s -o index.html slides.md --self-contained -V revealjs-url=./reveal.js -V theme=night"
       
       
-#       # Runs a single command using the runners shell
-#       - name: Run a one-line script
-#         run: pandoc --mathjax -t revealjs -s -o index.html slides.md --self-contained -V revealjs-url=./reveal.js -V theme=night
 
 #       # Runs a set of commands using the runners shell
 #       - name: Run a multi-line script
