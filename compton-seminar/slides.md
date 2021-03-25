@@ -27,11 +27,11 @@ $$
 
 # Centre-of-mass frame
 
-![Centre of mass frame diagram](images/com-frame.svg)
+![Centre of mass frame diagram](compton-seminar/images/com-frame.svg)
 
 # Lab frame
 
-![Lab mass frame diagram](images/lab-frame.svg)
+![Lab mass frame diagram](compton-seminar/images/lab-frame.svg)
 
 <style>
 .reveal {
