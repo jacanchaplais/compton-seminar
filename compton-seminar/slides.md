@@ -4,7 +4,7 @@ author:
 - Jacan Chaplais
 title: Differential cross section for Compton scattering
 title-slide-attributes:
-    data-background-image: compton-seminar/images/bg.jpg
+    data-background-image: images/bg.jpg
     data-background-size: cover
     data-background-opacity: 0.4
 date: April, 2021
@@ -18,20 +18,19 @@ print("hello world")
 * test
 * test
 
-test change
-
 $$
 \frac{1}{\omega^\prime}-\frac{1}{\omega}=\frac{1}{m}(1-\cos \theta)
 $$
 
+test change.
 
 # Centre-of-mass frame
 
-![Centre of mass frame diagram](compton-seminar/images/com-frame.svg)
+![Centre of mass frame diagram](images/com-frame.svg)
 
 # Lab frame
 
-![Lab mass frame diagram](compton-seminar/images/lab-frame.svg)
+![Lab mass frame diagram](images/lab-frame.svg)
 
 <style>
 .reveal {
