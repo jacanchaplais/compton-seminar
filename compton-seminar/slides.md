@@ -6,14 +6,22 @@ title: Differential cross section for Compton scattering
 title-slide-attributes:
     data-background-image: images/bg.jpg
     data-background-size: cover
-    data-background-opacity: 0.4
+    data-background-opacity: 0.3
+slideNumber: 1
 date: April, 2021
 lang: en-GB
 ...
-# Foo
-```python
-print("hello world")
-```
+
+# Outline
+* Motivation
+* Theory
+    * Frames of reference
+    * The invariant amplitude
+    * Phase space integrals
+* Method
+
+
+
 # Bar
 * test
 * test
@@ -30,7 +38,7 @@ test change.
 
 # Lab frame
 
-![Lab mass frame diagram](images/lab-frame.svg)
+![Lab frame diagram](images/lab-frame.svg)
 
 <style>
 .reveal {
@@ -51,7 +59,9 @@ p.author {
 
 .reveal section img {
     border: none;
-    background: none !important;
+    // background: none !important;
     box-shadow: none;
+    padding: 20px;
+    border-radius: 10px;
 }
 </style>
