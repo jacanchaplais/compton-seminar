@@ -4,7 +4,7 @@ author:
 - Jacan Chaplais
 title: Differential cross section for Compton scattering
 title-slide-attributes:
-    data-background-image: images/bg.jpg
+    data-background-image: compton-seminar/images/bg.jpg
     data-background-size: cover
     data-background-opacity: 0.4
 date: April, 2021
