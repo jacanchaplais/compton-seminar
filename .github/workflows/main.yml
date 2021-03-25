@@ -27,7 +27,7 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: enter the slideshow dir
-        run: cd compton-seminar/
+        run: echo $pwd
 
       - uses: maxheld83/pandoc@v2
         with:
