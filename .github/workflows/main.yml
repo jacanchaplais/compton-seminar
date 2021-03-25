@@ -24,16 +24,19 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v2
         with:
-          path: compton-seminar
-        
+          name: my-artifact
+                
+      - name: Display structure of downloaded files
+        run: ls -R  
       # # Runs a single command using the runners shell
       # - name: enter the slideshow dir
       #   run: echo $pwd > info.txt
 
-      - uses: maxheld83/pandoc@v2
-        with:
-          args: "--mathjax -t revealjs -s -o index.html slides.md --self-contained -V revealjs-url=./reveal.js -V theme=night"
+      # - uses: maxheld83/pandoc@v2
+      #   with:
+      #     args: "--mathjax -t revealjs -s -o index.html slides.md --self-contained -V revealjs-url=./reveal.js -V theme=night"
       
       
 
