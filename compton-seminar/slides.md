@@ -8,6 +8,7 @@ title-slide-attributes:
     data-background-size: cover
     data-background-opacity: 0.3
 slideNumber: 1
+backgroundImage: images/waves.jpg
 transition: convex
 transitionSpeed: slow
 date: April, 2021
@@ -107,6 +108,7 @@ p.author {
     padding: 20px;
     border-radius: 10px;
     background: rgb(38 34 64 / 72%);
+    backdrop-filter: blur(3px);
 }
 
 .column { /* left col */
