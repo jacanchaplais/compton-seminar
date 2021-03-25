@@ -25,8 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       # Runs a single command using the runners shell
+      - run: cd compton-seminar
       - uses: maxheld83/pandoc@v2
-        working-directory: compton-seminar
         with:
           args: "--mathjax -t revealjs -s -o index.html slides.md --self-contained -V revealjs-url=reveal.js -V theme=night"
       
