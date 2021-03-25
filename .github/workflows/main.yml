@@ -29,7 +29,6 @@ jobs:
           args: "--mathjax -t revealjs -s -o compton-seminar/index.html compton-seminar/slides.md --self-contained -V revealjs-url=compton-seminar/reveal.js -V theme=night"
       - uses: actions/upload-artifact@master
         with:
-          name: built-slides
           path: compton-seminar/index.html
       
 
