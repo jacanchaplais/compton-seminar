@@ -240,6 +240,14 @@ data-background-opacity=0.4
 }
 
 
+# References {
+data-background-image='images/bg/refs.jpg'
+data-background-opacity=0.3
+}
+
+
+
+
 
 <style>
 .reveal {
