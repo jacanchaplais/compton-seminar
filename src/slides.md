@@ -224,12 +224,12 @@ data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
 
-## QED prediction for ds/dtheta {
+## QED prediction for $\rm{d}\sigma/\rm{d}\theta$ {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
 
-## QED prediction for ds/dt {
+## QED prediction for $\rm{d}\sigma/\rm{d}t$ {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
@@ -277,5 +277,9 @@ p.author {
 
 .column + .column { /* right col */
     padding: 0 0 0 2.5%;
+}
+
+h1 .math, h2 .math, h3 .math {
+    text-transform: none !important;
 }
 </style>
