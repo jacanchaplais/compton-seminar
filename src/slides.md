@@ -39,10 +39,11 @@ data-background-opacity=0.3
 }
 :::::::::::::: {.columns}
 ::: {.column width="45%"}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in
+In 1927, Dirac proposed that quantum mechanics may be elevated to a relativistic
+theory by quantizing a spinor field [@dirac_1927].
+
+
+![](images/dirac.jpg){ width=70% }
 :::
 ::: {.column width="45%"}
 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
