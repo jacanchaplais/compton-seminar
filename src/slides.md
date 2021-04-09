@@ -39,16 +39,18 @@ data-background-opacity=0.3
 }
 :::::::::::::: {.columns}
 ::: {.column width="45%"}
-In 1927, Dirac proposed that quantum mechanics may be elevated to a relativistic
-theory by quantizing a spinor field [@dirac_1927].
+In 1927, Dirac proposed that a quantum description of the interaction between
+radiation and matter  may be elevated to a relativistic
+theory by quantizing the electromagnetic field [@dirac_1927].
 
 
 ![](images/dirac.jpg){ width=70% }
 :::
 ::: {.column width="45%"}
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-id est laborum.
+On further investigation, Oppenheimer discovered that blah blah.
+It was a very good discovery, and everyone liked Oppenheimer.
+
+![](images/oppenheimer.jpg){ width=70% }
 :::
 ::::::::::::::
 
