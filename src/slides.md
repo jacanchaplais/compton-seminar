@@ -19,14 +19,15 @@ data-background-image='images/bg/outline.jpg'
 data-background-opacity=0.5
 }
 
-::: incremental
-* Motivation
+* History
 * Theory
     * Frames of reference
     * The invariant amplitude
     * Phase space integrals
 * Method
-:::
+  * Matrix elem sq
+  * Phase space
+  * Cross section
 
 # Motivation {
 data-background-image='images/bg/motivation.jpg'
@@ -85,7 +86,7 @@ data-background-opacity=0.3
 .allowframebreaks
 }
 
-Inetial frame in which sum of spatial momenta is zero.
+Inertial frame in which sum of spatial momenta is zero.
 
 ![Centre of mass frame diagram](images/com-frame.svg)
 
@@ -109,7 +110,9 @@ data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
 }
 
-blah blah
+- Explain phase space (differs frame to frame)
+- Delta function for conservation
+- Matrix element
 
 $$
 \begin{aligned}
@@ -118,7 +121,7 @@ $$
 \end{aligned}
 $$
 
-## Phase space integral {
+## Phase space integral? {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
 }
@@ -177,14 +180,18 @@ data-background-image='images/bg/inv_amp.jpg'
 data-background-opacity=0.5
 }
 
-Blah blah algebra
+- Experimental basis...
+- Studying unpolarised case
+- Because we don't know spin of beam
 
 ## Working out the traces {
 data-background-image='images/bg/inv_amp.jpg'
 data-background-opacity=0.5
 }
 
-Bluh bluh traces
+- Introducing that the amplitude reduces to traces
+- Explain techniques for evaluating them
+- Quoting result
 
 # Phase space integral {
 data-background-image='images/bg/phase.jpg'
