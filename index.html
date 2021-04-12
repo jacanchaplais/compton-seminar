@@ -171,19 +171,49 @@ u^{s}(p)
 </section>
 <section id="spin-averages-and-polarisation-sums" class="slide level2" data-background-image="images/bg/inv_amp.jpg" data-background-opacity="0.5">
 <h2 data-background-image="images/bg/inv_amp.jpg" data-background-opacity="0.5">Spin averages and polarisation sums</h2>
-<ul>
-<li>Experimental basis…</li>
-<li>Studying unpolarised case</li>
-<li>Because we don’t know spin of beam</li>
-</ul>
+<p>In the unpolarised case, we do not know the spins of particles. The beam of electron orientations are random, so we average over all initial particles, and sum over all final particles.</p>
+<p><span class="math display">\[
+\langle |\mu|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mu |^2
+\]</span></p>
 </section>
 <section id="working-out-the-traces" class="slide level2" data-background-image="images/bg/inv_amp.jpg" data-background-opacity="0.5">
 <h2 data-background-image="images/bg/inv_amp.jpg" data-background-opacity="0.5">Working out the traces</h2>
-<ul>
-<li>Introducing that the amplitude reduces to traces</li>
-<li>Explain techniques for evaluating them</li>
-<li>Quoting result</li>
-</ul>
+<p><span class="math display">\[
+\frac{1}{4} \sum_{\text {spins}}|\mathcal{M}|^{2}
+=
+\dfrac{e^4}{4}
+\left[
+\dfrac
+    {\operatorname{Tr} A}
+    {\left(2 p \cdot k\right)^2}
++ \dfrac
+    {\operatorname{Tr} B}
+    {\left(2 p \cdot k\right) \left(2 p \cdot k^{\prime} \right)}
++ \dfrac
+    {\operatorname{Tr} C}
+    {\left(2 p \cdot k^{\prime} \right)\left(2 p \cdot k\right)}
++ \dfrac
+    {\operatorname{Tr} D}
+    {\left(2 p \cdot k^{\prime} \right)^2}
+\right]
+\]</span></p>
+<p>By using algebra that is facilitated by a number of theorems, the traces can be calculated.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\frac{1}{4} \sum_{\text {spins }}|\mathcal{M}|^{2}=
+2 e^{4}
+\left[
+\frac{m^2 - u}{s - m^2}
++ \frac{s - m^2}{m^2 - u}\right.
++&amp;\left. 2 m^{2}\left(
+\frac{2}{s - m^2} - \frac{2}{m^2 - u}
+\right) \right. \\
++&amp; \left. m^{4}\left(
+\frac{2}{s - m^2} - \frac{2}{m^2 - u}
+\right)^{2}
+\right] 
+\end{aligned}
+\]</span></p>
 </section></section>
 <section>
 <section id="phase-space-integral-1" class="title-slide slide level1" data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">
@@ -192,11 +222,21 @@ u^{s}(p)
 </section>
 <section id="in-centre-of-mass-frame" class="slide level2" data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">In centre-of-mass frame</h2>
-<p>blah blah</p>
+<p>The phase space of an interaction carries its kinematic information. It depends on masses, energies and momenta. Therefore, it differs by a change of reference frame.</p>
+<p>In the centre-of-mass frame, the integral takes the form</p>
+<p><span class="math display">\[
+\int \mathrm{d} \Pi_{2} = \frac{1}{16 \pi^{2}} \int \mathrm{d} \Omega
+\frac{\omega}{E_{\text{CoM}}}
+\]</span></p>
 </section>
 <section id="in-lab-frame" class="slide level2" data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">In lab frame</h2>
-<p>dooda dooda</p>
+<p>Whereas in the lab frame, we obtain</p>
+<p><span class="math display">\[
+\int \mathrm{d} \Pi_{2}
+=
+\dfrac{1}{16 \pi^2} \int \mathrm{d}\Omega \frac{\omega^{\prime \; 2}}{m \omega}
+\]</span></p>
 </section></section>
 <section>
 <section id="obtaining-the-cross-section" class="title-slide slide level1" data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">
@@ -205,20 +245,63 @@ u^{s}(p)
 </section>
 <section id="function-of-squared-momentum-transfer" class="slide level2" data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">Function of squared momentum transfer</h2>
+<p>We may now bring our equations for the phase space integral and the invariant amplitude together. Writing in terms of the Mandelstam variables in the centre-of-mass frame, we obtain <span class="math display">\[
+\begin{aligned}
+\dfrac{\mathrm{d}\sigma\left(s, t\right)}{\mathrm{d}t}
+= \dfrac{2\pi\alpha^2}{\left(s - m^2\right)^2}
+\left[
+\frac{s + t - m^2}{s - m^2}
++ \frac{s - m^2}{s + t - m^2}\right.
++&amp;\left. 2 m^{2}\left(
+\frac{2}{s - m^2} - \frac{2}{s + t - m^2}
+\right) \right. \\
++&amp; \left. m^{4}\left(
+\frac{2}{s - m^2} - \frac{2}{s + t - m^2}
+\right)^{2}
+\right]
+\end{aligned}
+\]</span></p>
 </section>
 <section id="function-of-angle" class="slide level2" data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">Function of angle</h2>
+<p>We perform the same procedure, in the lab frame, to obtain the angular dependence.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\dfrac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta} =
+\dfrac{1}{4m\omega} \dfrac{1}{8\pi} \dfrac{\omega^{\prime \; 2}}{\omega m}
+2 e^{4} \left[
+\frac{m^2 - u}{s - m^2}
++ \frac{s - m^2}{m^2 - u}\right.
++&amp;\left. 2 m^{2}\left(
+\frac{2}{s - m^2} - \frac{2}{m^2 - u}
+\right) \right. \\
++&amp; \left. m^{4}\left(
+\frac{2}{s - m^2} - \frac{2}{m^2 - u}
+\right)^{2}
+\right] 
+\end{aligned}
+\]</span></p>
 </section></section>
 <section>
 <section id="results" class="title-slide slide level1" data-background-image="images/bg/results.jpg" data-background-opacity="0.3">
 <h1 data-background-image="images/bg/results.jpg" data-background-opacity="0.3">Results</h1>
 
 </section>
-<section id="qed-prediction-for-rmdsigmarmdtheta" class="slide level2" data-background-image="images/bg/results.jpg" data-background-opacity="0.3">
-<h2 data-background-image="images/bg/results.jpg" data-background-opacity="0.3">QED prediction for <span class="math inline">\(\rm{d}\sigma/\rm{d}\theta\)</span></h2>
+<section id="qed-prediction-for-rmdsigmarmdcostheta" class="slide level2" data-background-image="images/bg/results.jpg" data-background-opacity="0.3">
+<h2 data-background-image="images/bg/results.jpg" data-background-opacity="0.3">QED prediction for <span class="math inline">\(\rm{d}\sigma/\rm{d}\cos\theta\)</span></h2>
+<p><img data-src="images/plots/dcos.svg" style="width:80.0%" /></p>
 </section>
 <section id="qed-prediction-for-rmdsigmarmdt" class="slide level2" data-background-image="images/bg/results.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/results.jpg" data-background-opacity="0.3">QED prediction for <span class="math inline">\(\rm{d}\sigma/\rm{d}t\)</span></h2>
+<p><img data-src="images/plots/dt_low.svg" style="width:75.0%" /></p>
+</section>
+<section id="qed-prediction-for-rmdsigmarmdt-1" class="slide level2" data-background-image="images/bg/results.jpg" data-background-opacity="0.3">
+<h2 data-background-image="images/bg/results.jpg" data-background-opacity="0.3">QED prediction for <span class="math inline">\(\rm{d}\sigma/\rm{d}t\)</span></h2>
+<p><img data-src="images/plots/dt_medium.svg" style="width:75.0%" /></p>
+</section>
+<section id="qed-prediction-for-rmdsigmarmdt-2" class="slide level2" data-background-image="images/bg/results.jpg" data-background-opacity="0.3">
+<h2 data-background-image="images/bg/results.jpg" data-background-opacity="0.3">QED prediction for <span class="math inline">\(\rm{d}\sigma/\rm{d}t\)</span></h2>
+<p><img data-src="images/plots/dt_high.svg" style="width:75.0%" /></p>
 </section></section>
 <section id="conclusion" class="title-slide slide level1" data-background-image="images/bg/conclusion.jpg" data-background-opacity="0.4">
 <h1 data-background-image="images/bg/conclusion.jpg" data-background-opacity="0.4">Conclusion</h1>

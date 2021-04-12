@@ -180,18 +180,59 @@ data-background-image='images/bg/inv_amp.jpg'
 data-background-opacity=0.5
 }
 
-- Experimental basis...
-- Studying unpolarised case
-- Because we don't know spin of beam
+In the unpolarised case, we do not know the spins of particles.
+The beam of electron orientations are random, so we average
+over all initial particles, and sum over all final particles.
+
+$$
+\langle |\mu|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mu |^2
+$$
+
 
 ## Working out the traces {
 data-background-image='images/bg/inv_amp.jpg'
 data-background-opacity=0.5
 }
 
-- Introducing that the amplitude reduces to traces
-- Explain techniques for evaluating them
-- Quoting result
+$$
+\frac{1}{4} \sum_{\text {spins}}|\mathcal{M}|^{2}
+=
+\dfrac{e^4}{4}
+\left[
+\dfrac
+    {\operatorname{Tr} A}
+    {\left(2 p \cdot k\right)^2}
++ \dfrac
+    {\operatorname{Tr} B}
+    {\left(2 p \cdot k\right) \left(2 p \cdot k^{\prime} \right)}
++ \dfrac
+    {\operatorname{Tr} C}
+    {\left(2 p \cdot k^{\prime} \right)\left(2 p \cdot k\right)}
++ \dfrac
+    {\operatorname{Tr} D}
+    {\left(2 p \cdot k^{\prime} \right)^2}
+\right]
+$$
+
+By using algebra that is facilitated by a number of theorems,
+the traces can be calculated.
+
+$$
+\begin{aligned}
+\frac{1}{4} \sum_{\text {spins }}|\mathcal{M}|^{2}=
+2 e^{4}
+\left[
+\frac{m^2 - u}{s - m^2}
++ \frac{s - m^2}{m^2 - u}\right.
++&\left. 2 m^{2}\left(
+\frac{2}{s - m^2} - \frac{2}{m^2 - u}
+\right) \right. \\
++& \left. m^{4}\left(
+\frac{2}{s - m^2} - \frac{2}{m^2 - u}
+\right)^{2}
+\right] 
+\end{aligned}
+$$
 
 # Phase space integral {
 data-background-image='images/bg/phase.jpg'
@@ -203,14 +244,29 @@ data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
 }
 
-blah blah
+The phase space of an interaction carries its kinematic information.
+It depends on masses, energies and momenta. Therefore, it differs by
+a change of reference frame.
+
+In the centre-of-mass frame, the integral takes the form
+
+$$
+\int \mathrm{d} \Pi_{2} = \frac{1}{16 \pi^{2}} \int \mathrm{d} \Omega
+\frac{\omega}{E_{\text{CoM}}}
+$$
 
 ## In lab frame {
 data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
 }
 
-dooda dooda
+Whereas in the lab frame, we obtain
+
+$$
+\int \mathrm{d} \Pi_{2}
+=
+\dfrac{1}{16 \pi^2} \int \mathrm{d}\Omega \frac{\omega^{\prime \; 2}}{m \omega}
+$$
 
 # Obtaining the cross section {
 data-background-image='images/bg/cross.jpg'
@@ -222,26 +278,84 @@ data-background-image='images/bg/cross.jpg'
 data-background-opacity=0.3
 }
 
+We may now bring our equations for the phase space integral and the invariant
+amplitude together. Writing in terms of the Mandelstam variables in the
+centre-of-mass frame, we obtain
+$$
+\begin{aligned}
+\dfrac{\mathrm{d}\sigma\left(s, t\right)}{\mathrm{d}t}
+= \dfrac{2\pi\alpha^2}{\left(s - m^2\right)^2}
+\left[
+\frac{s + t - m^2}{s - m^2}
++ \frac{s - m^2}{s + t - m^2}\right.
++&\left. 2 m^{2}\left(
+\frac{2}{s - m^2} - \frac{2}{s + t - m^2}
+\right) \right. \\
++& \left. m^{4}\left(
+\frac{2}{s - m^2} - \frac{2}{s + t - m^2}
+\right)^{2}
+\right]
+\end{aligned}
+$$
+
 
 ## Function of angle {
 data-background-image='images/bg/cross.jpg'
 data-background-opacity=0.3
 }
 
+We perform the same procedure, in the lab frame, to obtain the angular
+dependence.
+
+$$
+\begin{aligned}
+\dfrac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta} =
+\dfrac{1}{4m\omega} \dfrac{1}{8\pi} \dfrac{\omega^{\prime \; 2}}{\omega m}
+2 e^{4} \left[
+\frac{m^2 - u}{s - m^2}
++ \frac{s - m^2}{m^2 - u}\right.
++&\left. 2 m^{2}\left(
+\frac{2}{s - m^2} - \frac{2}{m^2 - u}
+\right) \right. \\
++& \left. m^{4}\left(
+\frac{2}{s - m^2} - \frac{2}{m^2 - u}
+\right)^{2}
+\right] 
+\end{aligned}
+$$
+
 # Results {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
 
-## QED prediction for $\rm{d}\sigma/\rm{d}\theta$ {
+## QED prediction for $\rm{d}\sigma/\rm{d}\cos\theta$ {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
+
+![](images/plots/dcos.svg){ width=80% }
 
 ## QED prediction for $\rm{d}\sigma/\rm{d}t$ {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
+
+![](images/plots/dt_low.svg){ width=75% }
+
+## QED prediction for $\rm{d}\sigma/\rm{d}t$ {
+data-background-image='images/bg/results.jpg'
+data-background-opacity=0.3
+}
+
+![](images/plots/dt_medium.svg){ width=75% }
+
+## QED prediction for $\rm{d}\sigma/\rm{d}t$ {
+data-background-image='images/bg/results.jpg'
+data-background-opacity=0.3
+}
+
+![](images/plots/dt_high.svg){ width=75% }
 
 # Conclusion {
 data-background-image='images/bg/conclusion.jpg'
