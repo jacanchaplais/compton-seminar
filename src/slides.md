@@ -19,15 +19,15 @@ data-background-image='images/bg/outline.jpg'
 data-background-opacity=0.5
 }
 
-* History
-* Theory
-    * Frames of reference
-    * The invariant amplitude
-    * Phase space integrals
-* Method
-  * Matrix elem sq
-  * Phase space
-  * Cross section
+- History
+- Theory
+    - Frames of reference
+    - The invariant amplitude
+    - Phase space integrals
+- Method
+  - Matrix elem sq
+  - Phase space
+  - Cross section
 
 # Motivation {
 data-background-image='images/bg/motivation.jpg'

@@ -1,0 +1,8 @@
+name: slides
+channels:
+  - defaults
+dependencies:
+  - livereload
+  - python=3.9
+  - pandoc=2.9.2
+prefix: /Users/jacanchaplais/miniconda3/envs/slides
