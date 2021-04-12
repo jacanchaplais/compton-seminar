@@ -28,3 +28,4 @@ coverage.xml
 # vim
 *.swp
 *.swo
+.vimrc
