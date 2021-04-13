@@ -338,6 +338,11 @@ $$
 \end{aligned}
 $$
 
+$$
+\dfrac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta} = \frac{\pi \alpha^{2}}{m^{2}} \left(\frac{\omega^{\prime}}{\omega}\right)^{2}
+\left[\frac{\omega^{\prime}}{\omega}+\frac{\omega}{\omega^{\prime}}-\sin ^{2} \theta\right]
+$$
+
 # Results {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
