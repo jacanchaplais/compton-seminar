@@ -19,22 +19,22 @@ data-background-image='images/bg/outline.jpg'
 data-background-opacity=0.5
 }
 
-- History
-- Theory
-    - Frames of reference
+- Motivation: a revolution in quantum theory?
+- Theoretical background
+    - Kinematics
     - The invariant amplitude
-    - Phase space integrals
 - Method
-  - Matrix elem sq
-  - Phase space
-  - Cross section
+  - Evaluating the invariant amplitude
+  - The phase space integral
+  - Obtaining the differential cross section
+- Results and conclusions
 
 # Motivation {
 data-background-image='images/bg/motivation.jpg'
 data-background-opacity=0.3
 }
 
-## Quantum theory: old and new {
+## Quantum fields: a new approach {
 data-background-image='images/bg/motivation.jpg'
 data-background-opacity=0.3
 }
@@ -48,12 +48,26 @@ theory by quantizing the electromagnetic field [@dirac_1927].
 ![](images/dirac.jpg){ width=70% }
 :::
 ::: {.column width="45%"}
-On further investigation, Oppenheimer discovered that blah blah.
-It was a very good discovery, and everyone liked Oppenheimer.
+However, in 1930 Oppenheimer discovered that perturbative
+approaches led to unphysical results beyond first order calculations,
+due to self-interaction
+[@oppenheimer_1930].
 
 ![](images/oppenheimer.jpg){ width=70% }
 :::
 ::::::::::::::
+
+## Quantum fields: a new approach {
+data-background-image='images/bg/motivation.jpg'
+data-background-opacity=0.3
+}
+
+Bethe provided the calculation insight needed to bring the theory forward.
+In 1947 he suggested a mechanism for handling the infinite terms, called
+renormalisation.
+
+Following this, the theory was developed rapidly, with Feynman's diagrammatic
+contribution reducing the technical barrier for performing such calculations.
 
 # Theory {
 data-background-image='images/bg/theory.jpg'
