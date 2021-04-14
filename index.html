@@ -60,12 +60,17 @@
 </ul></li>
 <li>Results and conclusions</li>
 </ul>
+<aside class="notes">
+
+</aside>
 </section>
 
 <section>
 <section id="motivation" class="title-slide slide level1" data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">
 <h1 data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">Motivation</h1>
+<aside class="notes">
 
+</aside>
 </section>
 <section id="quantum-fields-a-new-approach" class="slide level2" data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">Quantum fields: a new approach</h2>
@@ -78,6 +83,9 @@
 <p><img data-src="images/oppenheimer.jpg" style="width:70.0%" /></p>
 </div>
 </div>
+<aside class="notes">
+
+</aside>
 </section>
 <section id="making-sense-of-the-idea" class="slide level2" data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">Making sense of the idea</h2>
@@ -90,14 +98,58 @@
 <p><img data-src="images/feyn.jpg" style="width:70.0%" /></p>
 </div>
 </div>
+<aside class="notes">
+
+</aside>
 </section>
 <section id="a-need-for-confirmation" class="slide level2" data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">A need for confirmation</h2>
+<p>We explore our work to verify the theoretical work that has been done so far. We apply the calculation techniques in an attempt to recover Compton scattering.</p>
+<p>This choice is symbolic of the movement semi-classical particle physics, to a full acceptance of the quantum theory <span class="citation" data-cites="compton_1923">[5]</span>.</p>
+<aside class="notes">
+
+</aside>
 </section></section>
 <section>
 <section id="theory" class="title-slide slide level1" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
 <h1 data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Theory</h1>
+<aside class="notes">
 
+</aside>
+</section>
+<section id="differential-cross-section" class="slide level2" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
+<h2 data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Differential cross section</h2>
+<p>Cross section, <span class="math inline">\(\sigma\)</span>, used to characterise interaction strength. Analogous to effective cross sectional area of particle through beam, while capturing relativistic and quantum dynamics information.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\mathrm{d} \sigma=&amp; \frac{1}{2 E_{\mathcal{A}} 2 E_{\mathcal{B}}\left|v_{\mathcal{A}}-v_{\mathcal{B}}\right|}\left(\prod_{f} \frac{\mathrm{d}^{3} p_{f}}{(2 \pi)^{3}} \frac{1}{2 E_{f}}\right) \\
+&amp;\left|\mathcal{M}\left(p_{\mathcal{A}}, p_{\mathcal{B}} \rightarrow\left\{p_{f}\right\}\right)\right|^{2}(2 \pi)^{4} \delta^{(4)}\left(p_{\mathcal{A}}+p_{\mathcal{B}}-\sum p_{f}\right)
+\end{aligned}
+\]</span></p>
+<p>Constructed from phase space volume, invariant amplitude <span class="math inline">\(\mathcal{M}\)</span>, and momentum conserving Dirac delta terms.</p>
+<aside class="notes">
+<p>Matrix contains mass information, momentum, dynamics of the interaction.</p>
+<ul>
+<li>Explain phase space (differs frame to frame)</li>
+<li>Delta function for conservation</li>
+<li>Matrix element</li>
+</ul>
+</aside>
+</section>
+<section id="phase-space-integral" class="slide level2" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
+<h2 data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Phase space integral</h2>
+<p>The phase space volume for a two particle collision may be defined by the integral,</p>
+<p><span class="math display">\[
+\int \mathrm{d} \Pi_{2}=\int
+\frac{\mathrm{d}^{3} k^{\prime}} {(2 \pi)^{3} 2 E_{k^{\prime}}}
+\frac{\mathrm{d}^{3} p^{\prime}}{(2 \pi)^{3} 2 E_{p^{\prime}}}(2 \pi)^{4}
+\delta^{4}\left(p+k-k^{\prime}-p^{\prime}\right) \text{.}
+\]</span></p>
+<p>By making careful substitutions, and using fundamental theorem of calculus, can extract derivative of cross section wrt specific quantities, <em>eg.</em> <span class="math inline">\(\mathrm{d}\sigma / \mathrm{d}\cos\theta\)</span>.</p>
+<p>The phase space of an interaction carries its kinematic information. It depends on masses, energies and momenta. Therefore, it’s not frame invariant.</p>
+<aside class="notes">
+
+</aside>
 </section>
 <section id="kinematics" class="slide level2 allowframebreaks" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
 <h2 class="allowframebreaks" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Kinematics</h2>
@@ -108,6 +160,9 @@ t &amp;=&amp; \left(p^{\prime}-p\right)^{2} &amp;=&amp; p^{\prime 2}+p^{2}-2 p \
 u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{\prime} \cdot p &amp;=&amp; m^{2}-2 k^{\prime} \cdot p &amp;=&amp; m^{2}-2 k \cdot p^{\prime}
 \end{array}
 \]</span> Casting transition amplitudes in terms of these manifestly Lorentz invariant quantities allows us to jump between frames with ease.</p>
+<aside class="notes">
+
+</aside>
 </section>
 <section id="centre-of-mass-frame" class="slide level2 allowframebreaks" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
 <h2 class="allowframebreaks" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Centre-of-mass frame</h2>
@@ -116,7 +171,7 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 <img data-src="images/com-frame.svg" alt="" /><figcaption>Centre of mass frame diagram</figcaption>
 </figure>
 <aside class="notes">
-<p>I should probably reduce the size of the text here</p>
+
 </aside>
 </section>
 <section id="lab-frame" class="slide level2" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
@@ -125,32 +180,9 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 <figure>
 <img data-src="images/lab-frame.svg" alt="" /><figcaption>Lab frame diagram</figcaption>
 </figure>
-</section>
-<section id="differential-cross-section" class="slide level2" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
-<h2 data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Differential cross section</h2>
-<ul>
-<li>Explain phase space (differs frame to frame)</li>
-<li>Delta function for conservation</li>
-<li>Matrix element</li>
-</ul>
-<p><span class="math display">\[
-\begin{aligned}
-\mathrm{d} \sigma=&amp; \frac{1}{2 E_{\mathcal{A}} 2 E_{\mathcal{B}}\left|v_{\mathcal{A}}-v_{\mathcal{B}}\right|}\left(\prod_{f} \frac{\mathrm{d}^{3} p_{f}}{(2 \pi)^{3}} \frac{1}{2 E_{f}}\right) \\
-&amp;\left|\mathcal{M}\left(p_{\mathcal{A}}, p_{\mathcal{B}} \rightarrow\left\{p_{f}\right\}\right)\right|^{2}(2 \pi)^{4} \delta^{(4)}\left(p_{\mathcal{A}}+p_{\mathcal{B}}-\sum p_{f}\right)
-\end{aligned}
-\]</span></p>
 <aside class="notes">
-<p>Matrix contains mass information, momentum, dynamics of the interaction.</p>
+
 </aside>
-</section>
-<section id="phase-space-integral" class="slide level2" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
-<h2 data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Phase space integral?</h2>
-<p><span class="math display">\[
-\int \mathrm{d} \Pi_{2}=\int
-\frac{\mathrm{d}^{3} k^{\prime}} {(2 \pi)^{3} 2 E_{k^{\prime}}}
-\frac{\mathrm{d}^{3} p^{\prime}}{(2 \pi)^{3} 2 E_{p^{\prime}}}(2 \pi)^{4}
-\delta^{4}\left(p+k-k^{\prime}-p^{\prime}\right)
-\]</span></p>
 </section>
 <section id="invariant-amplitude" class="slide level2" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Invariant amplitude</h2>
@@ -181,11 +213,16 @@ u^{s}(p)
 &amp;=2_{} p^{\nu} u^{s}(p)
 \end{aligned}
 \]</span></p>
+<aside class="notes">
+
+</aside>
 </section></section>
 <section>
 <section id="evaluating-invariant-amplitude" class="title-slide slide level1" data-background-image="images/bg/inv_amp.jpg" data-background-opacity="0.5">
 <h1 data-background-image="images/bg/inv_amp.jpg" data-background-opacity="0.5">Evaluating invariant amplitude</h1>
+<aside class="notes">
 
+</aside>
 </section>
 <section id="spin-averages-and-polarisation-sums" class="slide level2" data-background-image="images/bg/inv_amp.jpg" data-background-opacity="0.5">
 <h2 data-background-image="images/bg/inv_amp.jpg" data-background-opacity="0.5">Spin averages and polarisation sums</h2>
@@ -193,6 +230,9 @@ u^{s}(p)
 <p><span class="math display">\[
 \langle |\mu|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mu |^2
 \]</span></p>
+<aside class="notes">
+
+</aside>
 </section>
 <section id="working-out-the-traces" class="slide level2" data-background-image="images/bg/inv_amp.jpg" data-background-opacity="0.5">
 <h2 data-background-image="images/bg/inv_amp.jpg" data-background-opacity="0.5">Working out the traces</h2>
@@ -232,20 +272,27 @@ u^{s}(p)
 \right] 
 \end{aligned}
 \]</span></p>
+<aside class="notes">
+
+</aside>
 </section></section>
 <section>
 <section id="phase-space-integral-1" class="title-slide slide level1" data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">
 <h1 data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">Phase space integral</h1>
+<aside class="notes">
 
+</aside>
 </section>
 <section id="in-centre-of-mass-frame" class="slide level2" data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">In centre-of-mass frame</h2>
-<p>The phase space of an interaction carries its kinematic information. It depends on masses, energies and momenta. Therefore, it differs by a change of reference frame.</p>
 <p>In the centre-of-mass frame, the integral takes the form</p>
 <p><span class="math display">\[
 \int \mathrm{d} \Pi_{2} = \frac{1}{16 \pi^{2}} \int \mathrm{d} \Omega
 \frac{\omega}{E_{\text{CoM}}}
 \]</span></p>
+<aside class="notes">
+
+</aside>
 </section>
 <section id="in-lab-frame" class="slide level2" data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">In lab frame</h2>
@@ -255,11 +302,16 @@ u^{s}(p)
 =
 \dfrac{1}{16 \pi^2} \int \mathrm{d}\Omega \frac{\omega^{\prime \; 2}}{m \omega}
 \]</span></p>
+<aside class="notes">
+
+</aside>
 </section></section>
 <section>
 <section id="obtaining-the-cross-section" class="title-slide slide level1" data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">
 <h1 data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">Obtaining the cross section</h1>
+<aside class="notes">
 
+</aside>
 </section>
 <section id="function-of-squared-momentum-transfer" class="slide level2" data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">Function of squared momentum transfer</h2>
@@ -279,6 +331,9 @@ u^{s}(p)
 \right]
 \end{aligned}
 \]</span></p>
+<aside class="notes">
+
+</aside>
 </section>
 <section id="function-of-angle" class="slide level2" data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">Function of angle</h2>
@@ -304,35 +359,57 @@ u^{s}(p)
 \dfrac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta} = \frac{\pi \alpha^{2}}{m^{2}} \left(\frac{\omega^{\prime}}{\omega}\right)^{2}
 \left[\frac{\omega^{\prime}}{\omega}+\frac{\omega}{\omega^{\prime}}-\sin ^{2} \theta\right]
 \]</span></p>
+<aside class="notes">
+
+</aside>
 </section></section>
 <section>
 <section id="results" class="title-slide slide level1" data-background-image="images/bg/results.jpg" data-background-opacity="0.3">
 <h1 data-background-image="images/bg/results.jpg" data-background-opacity="0.3">Results</h1>
+<aside class="notes">
 
+</aside>
 </section>
 <section id="qed-prediction-for-rmdsigmarmdcostheta" class="slide level2" data-background-image="images/bg/results.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/results.jpg" data-background-opacity="0.3">QED prediction for <span class="math inline">\(\rm{d}\sigma/\rm{d}\cos\theta\)</span></h2>
 <p><img data-src="images/plots/dcos.svg" style="width:80.0%" /></p>
+<aside class="notes">
+
+</aside>
 </section>
 <section id="qed-prediction-for-rmdsigmarmdt" class="slide level2" data-background-image="images/bg/results.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/results.jpg" data-background-opacity="0.3">QED prediction for <span class="math inline">\(\rm{d}\sigma/\rm{d}t\)</span></h2>
 <p><img data-src="images/plots/dt_low.svg" style="width:75.0%" /></p>
+<aside class="notes">
+
+</aside>
 </section>
 <section id="qed-prediction-for-rmdsigmarmdt-1" class="slide level2" data-background-image="images/bg/results.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/results.jpg" data-background-opacity="0.3">QED prediction for <span class="math inline">\(\rm{d}\sigma/\rm{d}t\)</span></h2>
 <p><img data-src="images/plots/dt_medium.svg" style="width:75.0%" /></p>
+<aside class="notes">
+
+</aside>
 </section>
 <section id="qed-prediction-for-rmdsigmarmdt-2" class="slide level2" data-background-image="images/bg/results.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/results.jpg" data-background-opacity="0.3">QED prediction for <span class="math inline">\(\rm{d}\sigma/\rm{d}t\)</span></h2>
 <p><img data-src="images/plots/dt_high.svg" style="width:75.0%" /></p>
+<aside class="notes">
+
+</aside>
 </section></section>
 <section id="conclusion" class="title-slide slide level1" data-background-image="images/bg/conclusion.jpg" data-background-opacity="0.4">
 <h1 data-background-image="images/bg/conclusion.jpg" data-background-opacity="0.4">Conclusion</h1>
+<aside class="notes">
 
+</aside>
 </section>
 
 <section id="references" class="title-slide slide level1" data-background-image="images/bg/refs.jpg" data-background-opacity="0.3">
 <h1 data-background-image="images/bg/refs.jpg" data-background-opacity="0.3">References</h1>
+<aside class="notes">
+
+</aside>
 <style>
 .reveal {
     font-size: 26px;
@@ -379,6 +456,9 @@ h1 .math, h2 .math, h3 .math {
 </div>
 <div id="ref-feynman_1949b">
 <p>[4] Feynman RP. The Theory of Positrons. Physical Review 1949;76:749–59. <a href="https://doi.org/10.1103/PhysRev.76.749">https://doi.org/10.1103/PhysRev.76.749</a>.</p>
+</div>
+<div id="ref-compton_1923">
+<p>[5] Compton AH. A quantum theory of the scattering of x-rays by light elements. Phys Rev 1923;21:483–502. <a href="https://doi.org/10.1103/PhysRev.21.483">https://doi.org/10.1103/PhysRev.21.483</a>.</p>
 </div>
 </div>
 </section>

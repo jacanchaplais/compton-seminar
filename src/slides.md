@@ -29,10 +29,18 @@ data-background-opacity=0.5
   - Obtaining the differential cross section
 - Results and conclusions
 
+::: notes
+
+:::
+
 # Motivation {
 data-background-image='images/bg/motivation.jpg'
 data-background-opacity=0.3
 }
+
+::: notes
+
+:::
 
 ## Quantum fields: a new approach {
 data-background-image='images/bg/motivation.jpg'
@@ -56,6 +64,10 @@ due to self-interaction
 ![](images/oppenheimer.jpg){ width=70% }
 :::
 ::::::::::::::
+
+::: notes
+
+:::
 
 ## Making sense of the idea {
 data-background-image='images/bg/motivation.jpg'
@@ -81,16 +93,86 @@ contribution reducing the technical barrier for performing calculations
 :::
 ::::::::::::::
 
+::: notes
+
+:::
 
 ## A need for confirmation {
 data-background-image='images/bg/motivation.jpg'
 data-background-opacity=0.3
 }
+We explore our work to verify the theoretical work that has been done so far.
+We apply the calculation techniques in an attempt to recover Compton scattering.
 
+This choice is symbolic of the movement semi-classical particle physics,
+to a full acceptance of the quantum theory [@compton_1923].
+
+::: notes
+
+:::
 # Theory {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
 }
+
+::: notes
+
+:::
+## Differential cross section {
+data-background-image='images/bg/theory.jpg'
+data-background-opacity=0.3
+}
+
+
+Cross section, $\sigma$, used to characterise interaction strength.
+Analogous to effective cross sectional area of particle through beam,
+while capturing relativistic and quantum dynamics information.
+
+$$
+\begin{aligned}
+\mathrm{d} \sigma=& \frac{1}{2 E_{\mathcal{A}} 2 E_{\mathcal{B}}\left|v_{\mathcal{A}}-v_{\mathcal{B}}\right|}\left(\prod_{f} \frac{\mathrm{d}^{3} p_{f}}{(2 \pi)^{3}} \frac{1}{2 E_{f}}\right) \\
+&\left|\mathcal{M}\left(p_{\mathcal{A}}, p_{\mathcal{B}} \rightarrow\left\{p_{f}\right\}\right)\right|^{2}(2 \pi)^{4} \delta^{(4)}\left(p_{\mathcal{A}}+p_{\mathcal{B}}-\sum p_{f}\right)
+\end{aligned}
+$$
+
+Constructed from phase space volume, invariant amplitude $\mathcal{M}$, and
+momentum conserving Dirac delta terms.
+
+::: notes
+Matrix contains mass information, momentum, dynamics of the interaction.
+
+- Explain phase space (differs frame to frame)
+- Delta function for conservation
+- Matrix element
+:::
+
+## Phase space integral {
+data-background-image='images/bg/theory.jpg'
+data-background-opacity=0.3
+}
+
+The phase space volume for a two particle collision may be defined by the
+integral,
+
+$$
+\int \mathrm{d} \Pi_{2}=\int
+\frac{\mathrm{d}^{3} k^{\prime}} {(2 \pi)^{3} 2 E_{k^{\prime}}}
+\frac{\mathrm{d}^{3} p^{\prime}}{(2 \pi)^{3} 2 E_{p^{\prime}}}(2 \pi)^{4}
+\delta^{4}\left(p+k-k^{\prime}-p^{\prime}\right) \text{.}
+$$
+
+By making careful substitutions, 
+and using fundamental theorem of calculus, can extract derivative
+of cross section wrt specific quantities, _eg._
+$\mathrm{d}\sigma / \mathrm{d}\cos\theta$.
+
+The phase space of an interaction carries its kinematic information.
+It depends on masses, energies and momenta. Therefore, it's not frame
+invariant.
+
+::: notes
+
+:::
 
 ## Kinematics {
 data-background-image='images/bg/theory.jpg'
@@ -111,6 +193,9 @@ $$
 Casting transition amplitudes in terms of these manifestly Lorentz invariant
 quantities allows us to jump between frames with ease.
 
+::: notes
+
+:::
 
 ## Centre-of-mass frame {
 data-background-image='images/bg/theory.jpg'
@@ -123,7 +208,6 @@ Inertial frame in which sum of spatial momenta is zero.
 ![Centre of mass frame diagram](images/com-frame.svg)
 
 ::: notes
-I should probably reduce the size of the text here
 
 :::
 
@@ -137,37 +221,9 @@ rest frame for our particle detectors, hence _lab_ frame.
 
 ![Lab frame diagram](images/lab-frame.svg)
 
-## Differential cross section {
-data-background-image='images/bg/theory.jpg'
-data-background-opacity=0.3
-}
-
-- Explain phase space (differs frame to frame)
-- Delta function for conservation
-- Matrix element
-
-$$
-\begin{aligned}
-\mathrm{d} \sigma=& \frac{1}{2 E_{\mathcal{A}} 2 E_{\mathcal{B}}\left|v_{\mathcal{A}}-v_{\mathcal{B}}\right|}\left(\prod_{f} \frac{\mathrm{d}^{3} p_{f}}{(2 \pi)^{3}} \frac{1}{2 E_{f}}\right) \\
-&\left|\mathcal{M}\left(p_{\mathcal{A}}, p_{\mathcal{B}} \rightarrow\left\{p_{f}\right\}\right)\right|^{2}(2 \pi)^{4} \delta^{(4)}\left(p_{\mathcal{A}}+p_{\mathcal{B}}-\sum p_{f}\right)
-\end{aligned}
-$$
-
 ::: notes
-Matrix contains mass information, momentum, dynamics of the interaction.
 
 :::
-## Phase space integral? {
-data-background-image='images/bg/theory.jpg'
-data-background-opacity=0.3
-}
-
-$$
-\int \mathrm{d} \Pi_{2}=\int
-\frac{\mathrm{d}^{3} k^{\prime}} {(2 \pi)^{3} 2 E_{k^{\prime}}}
-\frac{\mathrm{d}^{3} p^{\prime}}{(2 \pi)^{3} 2 E_{p^{\prime}}}(2 \pi)^{4}
-\delta^{4}\left(p+k-k^{\prime}-p^{\prime}\right)
-$$
 
 ## Invariant amplitude {
 data-background-image='images/bg/theory.jpg'
@@ -206,10 +262,18 @@ $$
 \end{aligned}
 $$
 
+::: notes
+
+:::
+
 # Evaluating invariant amplitude {
 data-background-image='images/bg/inv_amp.jpg'
 data-background-opacity=0.5
 }
+
+::: notes
+
+:::
 
 ## Spin averages and polarisation sums {
 data-background-image='images/bg/inv_amp.jpg'
@@ -224,6 +288,10 @@ $$
 \langle |\mu|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mu |^2
 $$
 
+
+::: notes
+
+:::
 
 ## Working out the traces {
 data-background-image='images/bg/inv_amp.jpg'
@@ -270,19 +338,24 @@ $$
 \end{aligned}
 $$
 
+::: notes
+
+:::
+
 # Phase space integral {
 data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
 }
+
+::: notes
+
+:::
 
 ## In centre-of-mass frame {
 data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
 }
 
-The phase space of an interaction carries its kinematic information.
-It depends on masses, energies and momenta. Therefore, it differs by
-a change of reference frame.
 
 In the centre-of-mass frame, the integral takes the form
 
@@ -290,6 +363,10 @@ $$
 \int \mathrm{d} \Pi_{2} = \frac{1}{16 \pi^{2}} \int \mathrm{d} \Omega
 \frac{\omega}{E_{\text{CoM}}}
 $$
+
+::: notes
+
+:::
 
 ## In lab frame {
 data-background-image='images/bg/phase.jpg'
@@ -304,10 +381,18 @@ $$
 \dfrac{1}{16 \pi^2} \int \mathrm{d}\Omega \frac{\omega^{\prime \; 2}}{m \omega}
 $$
 
+::: notes
+
+:::
+
 # Obtaining the cross section {
 data-background-image='images/bg/cross.jpg'
 data-background-opacity=0.3
 }
+
+::: notes
+
+:::
 
 ## Function of squared momentum transfer {
 data-background-image='images/bg/cross.jpg'
@@ -334,6 +419,10 @@ $$
 \end{aligned}
 $$
 
+
+::: notes
+
+:::
 
 ## Function of angle {
 data-background-image='images/bg/cross.jpg'
@@ -367,10 +456,18 @@ $$
 \left[\frac{\omega^{\prime}}{\omega}+\frac{\omega}{\omega^{\prime}}-\sin ^{2} \theta\right]
 $$
 
+::: notes
+
+:::
+
 # Results {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
+
+::: notes
+
+:::
 
 ## QED prediction for $\rm{d}\sigma/\rm{d}\cos\theta$ {
 data-background-image='images/bg/results.jpg'
@@ -379,12 +476,20 @@ data-background-opacity=0.3
 
 ![](images/plots/dcos.svg){ width=80% }
 
+::: notes
+
+:::
+
 ## QED prediction for $\rm{d}\sigma/\rm{d}t$ {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
 
 ![](images/plots/dt_low.svg){ width=75% }
+
+::: notes
+
+:::
 
 ## QED prediction for $\rm{d}\sigma/\rm{d}t$ {
 data-background-image='images/bg/results.jpg'
@@ -393,6 +498,10 @@ data-background-opacity=0.3
 
 ![](images/plots/dt_medium.svg){ width=75% }
 
+::: notes
+
+:::
+
 ## QED prediction for $\rm{d}\sigma/\rm{d}t$ {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
@@ -400,16 +509,30 @@ data-background-opacity=0.3
 
 ![](images/plots/dt_high.svg){ width=75% }
 
+::: notes
+
+:::
+
 # Conclusion {
 data-background-image='images/bg/conclusion.jpg'
 data-background-opacity=0.4
 }
+
+::: notes
+
+:::
+
 
 
 # References {
 data-background-image='images/bg/refs.jpg'
 data-background-opacity=0.3
 }
+
+
+::: notes
+
+:::
 
 
 
