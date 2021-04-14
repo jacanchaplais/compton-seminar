@@ -39,7 +39,7 @@ data-background-image='images/bg/motivation.jpg'
 data-background-opacity=0.3
 }
 :::::::::::::: {.columns}
-::: {.column width="45%"}
+::: {.column width="47%"}
 In 1927, Dirac proposed that a quantum description of the interaction between
 radiation and matter  may be elevated to a relativistic
 theory by quantizing the electromagnetic field [@dirac_1927].
@@ -47,7 +47,7 @@ theory by quantizing the electromagnetic field [@dirac_1927].
 
 ![](images/dirac.jpg){ width=70% }
 :::
-::: {.column width="45%"}
+::: {.column width="47%"}
 However, in 1930 Oppenheimer discovered that perturbative
 approaches led to unphysical results beyond first order calculations,
 due to self-interaction
@@ -57,17 +57,35 @@ due to self-interaction
 :::
 ::::::::::::::
 
-## Quantum fields: a new approach {
+## Making sense of the idea {
 data-background-image='images/bg/motivation.jpg'
 data-background-opacity=0.3
 }
 
-Bethe provided the calculation insight needed to bring the theory forward.
-In 1947 he suggested a mechanism for handling the infinite terms, called
-renormalisation.
+:::::::::::::: {.columns}
+::: {.column width="47%"}
 
+In 1947 Bethe suggested a mechanism for handling the infinite terms, called
+renormalisation [@bethe_1947]. This sparked renewed interest in quantum fields.
+
+![](images/bet.jpg){ width=70% }
+
+:::
+::: {.column width="47%"}
 Following this, the theory was developed rapidly, with Feynman's diagrammatic
-contribution reducing the technical barrier for performing such calculations.
+contribution reducing the technical barrier for performing calculations
+[@feynman_1949b].
+
+![](images/feyn.jpg){ width=70% }
+
+:::
+::::::::::::::
+
+
+## A need for confirmation {
+data-background-image='images/bg/motivation.jpg'
+data-background-opacity=0.3
+}
 
 # Theory {
 data-background-image='images/bg/theory.jpg'
@@ -135,6 +153,10 @@ $$
 \end{aligned}
 $$
 
+::: notes
+Matrix contains mass information, momentum, dynamics of the interaction.
+
+:::
 ## Phase space integral? {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
@@ -337,6 +359,8 @@ $$
 \right] 
 \end{aligned}
 $$
+
+Writing in frame dependent terms obtains the famous Klein-Nishina formula
 
 $$
 \dfrac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta} = \frac{\pi \alpha^{2}}{m^{2}} \left(\frac{\omega^{\prime}}{\omega}\right)^{2}
