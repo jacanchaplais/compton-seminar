@@ -19,6 +19,9 @@ data-background-image='images/bg/outline.jpg'
 data-background-opacity=0.5
 }
 
+<script src='src/jquery.feyn/jquery-3.6.0.min.js'></script>
+<script src='src/jquery.feyn/jquery.feyn-1.0.1.min.js'></script>
+
 - Motivation: a revolution in quantum theory?
 - Theoretical background
     - Kinematics
@@ -146,6 +149,95 @@ Matrix contains mass information, momentum, dynamics of the interaction.
 - Matrix element
 :::
 
+## Invariant amplitude {
+data-background-image='images/bg/theory.jpg'
+data-background-opacity=0.3
+}
+
+<script>
+  $(document).ready(function() {
+    $('#feyn1').feyn({
+        color: 'white',
+        incoming: {i1: '20,180', i2: '180,180'},
+        outgoing: {o1: '20,20', o2: '180,20'},
+        vertex: {v1: '100,140', v2: '100,60'},
+        fermion: {line: 'i2-v1-v2-o2'},
+        photon: {line: 'i1-v1,v2-o1', label: 'k'},
+        symbol: {s1: ['80,70', 210, 'arrow', 60],
+                 s2: ['20, 160', 330, 'arrow', 60]},
+        label: {
+            t1: ['50, 130', 'k'],
+            t2: ['50, 72', 'k\''],
+            t3: ['125,100', 'p&#8202;+&#8202;k'],
+            t4: ['140, 145', 'p'],
+            t5: ['140, 60', 'p\''],
+        }
+    });
+
+    $('#feyn2').feyn({
+        color: 'white',
+        incoming: {i1: '20,180', i2: '180,180'},
+        outgoing: {o1: '20,20', o2: '180,20'},
+        vertex: {v1: '60,100', v2: '140,100'},
+        fermion: {line: 'i2-v2-v1-o1'},
+        photon: {line: 'i1-v1,v2-o2'},
+        mathjax: true,
+        grid: {show: true, unit: 20},
+        label: {
+            t1: ['50, 130', 'k'],
+        }
+    });
+  });
+</script>
+
+<div id='feyn-diag-container'>
+$i\mathcal{M} =$
+<div class='feyn-diags' id='feyn1'></div>
+$+$
+<div class='feyn-diags' id='feyn2'></div>
+</div>
+
+By applying the Feynman rules to these diagrams and grouping terms, we obtain
+$$
+i \mathcal{M}=i e^{2}
+\epsilon_{\mu \lambda^\prime}^{\ast}
+\left(k^{\prime}\right)
+\epsilon_{\nu \lambda}\left(k\right)
+\bar{u}^{s^{\prime}}\left(p^{\prime}\right)
+\left(
+    \dfrac{% numerator
+        \gamma^{\mu}(\not{p}+k+m) \gamma^{\nu}}
+        {(p+k)^{2}-m^{2}}% denominator
+    + \dfrac{% numerator
+        \gamma^{\nu}
+        \left(\not{p}-k^{\prime}+m\right)
+        \gamma^{\mu}}
+        {\left(p-k^{\prime}\right)^{2}-m^{2}}% denominator
+\right)
+u^{s}(p)
+$$
+
+## {
+data-background-image='images/bg/theory.jpg'
+data-background-opacity=0.3
+}
+
+This unwieldy expression can be simplified a little by expanding the binomials
+in the denominator, and observing for the numerator
+$$
+\begin{aligned}
+(\not{p}+m) \gamma^{\nu} u^{s}(p) &=\left(2 p^{\nu}-\gamma^{\nu} \not{p}+\gamma^{\nu} m\right) u^{s}(p) \\
+&=2 p^{\nu} u^{s}(p)-\gamma^{\nu}\underbrace{(\not{p}-m) u^{s}(p)}_{
+\text{Dirac equation} \implies 0
+} \\
+&=2_{} p^{\nu} u^{s}(p)
+\end{aligned}
+$$
+
+::: notes
+
+:::
+
 ## Phase space integral {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
@@ -220,47 +312,6 @@ Inertial frame in which the electron is at rest. This will also be the assumed
 rest frame for our particle detectors, hence _lab_ frame.
 
 ![Lab frame diagram](images/lab-frame.svg)
-
-::: notes
-
-:::
-
-## Invariant amplitude {
-data-background-image='images/bg/theory.jpg'
-data-background-opacity=0.3
-}
-
-By applying the Feynman rules to these diagrams and grouping terms, we obtain
-$$
-i \mathcal{M}=i e^{2}
-\epsilon_{\mu \lambda^\prime}^{\ast}
-\left(k^{\prime}\right)
-\epsilon_{\nu \lambda}\left(k\right)
-\bar{u}^{s^{\prime}}\left(p^{\prime}\right)
-\left(
-    \dfrac{% numerator
-        \gamma^{\mu}(\not{p}+k+m) \gamma^{\nu}}
-        {(p+k)^{2}-m^{2}}% denominator
-    + \dfrac{% numerator
-        \gamma^{\nu}
-        \left(\not{p}-k^{\prime}+m\right)
-        \gamma^{\mu}}
-        {\left(p-k^{\prime}\right)^{2}-m^{2}}% denominator
-\right)
-u^{s}(p)
-$$
-
-This unwieldy expression can be simplified a little by expanding the binomials
-in the denominator, and observing for the numerator
-$$
-\begin{aligned}
-(\not{p}+m) \gamma^{\nu} u^{s}(p) &=\left(2 p^{\nu}-\gamma^{\nu} \not{p}+\gamma^{\nu} m\right) u^{s}(p) \\
-&=2 p^{\nu} u^{s}(p)-\gamma^{\nu}\underbrace{(\not{p}-m) u^{s}(p)}_{
-\text{Dirac equation} \implies 0
-} \\
-&=2_{} p^{\nu} u^{s}(p)
-\end{aligned}
-$$
 
 ::: notes
 
@@ -566,6 +617,15 @@ p.author {
 
 .column + .column { /* right col */
     padding: 0 0 0 2.5%;
+}
+
+#feyn-diag-container .math.inline {
+    position: relative;
+    bottom: 90px;
+}
+
+.feyn-diags {
+    display: inline-block;
 }
 
 h1 .math, h2 .math, h3 .math {
