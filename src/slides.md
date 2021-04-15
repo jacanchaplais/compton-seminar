@@ -336,7 +336,7 @@ $$
 \int \mathrm{d} \Pi_{2}=\int
 \frac{\mathrm{d}^{3} k^{\prime}} {(2 \pi)^{3} 2 E_{k^{\prime}}}
 \frac{\mathrm{d}^{3} p^{\prime}}{(2 \pi)^{3} 2 E_{p^{\prime}}}(2 \pi)^{4}
-\delta^{4}\left(p+k-k^{\prime}-p^{\prime}\right) \text{.}
+\delta^{(4)}\left(p+k-k^{\prime}-p^{\prime}\right) \text{.}
 $$
 
 By making careful substitutions, 
