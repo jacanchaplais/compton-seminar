@@ -104,8 +104,8 @@ contribution reducing the technical barrier for performing calculations
 data-background-image='images/bg/motivation.jpg'
 data-background-opacity=0.3
 }
-We explore our work to verify the theoretical work that has been done so far.
-We apply the calculation techniques in an attempt to recover Compton scattering.
+In this talk we apply the theoretical work that has been done so far.
+Using these new calculation techniques, we attempt to recover Compton scattering.
 
 This choice is symbolic of the movement semi-classical particle physics,
 to a full acceptance of the quantum theory [@compton_1923].
