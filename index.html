@@ -192,28 +192,42 @@ i \mathcal{M}=i e^{2}
 \epsilon_{\nu \lambda}\left(k\right)
 \bar{u}^{s^{\prime}}\left(p^{\prime}\right)
 \left(
-    \dfrac{% numerator
-        \gamma^{\mu}(\not{p}+k+m) \gamma^{\nu}}
-        {(p+k)^{2}-m^{2}}% denominator
-    + \dfrac{% numerator
-        \gamma^{\nu}
-        \left(\not{p}-k^{\prime}+m\right)
-        \gamma^{\mu}}
-        {\left(p-k^{\prime}\right)^{2}-m^{2}}% denominator
+\dfrac{% numerator
+\gamma^{\mu}(\not{p}+k+m) \gamma^{\nu}}
+{(p+k)^{2}-m^{2}}% denominator
++ \dfrac{% numerator
+\gamma^{\nu}
+\left(\not{p}-k^{\prime}+m\right)
+\gamma^{\mu}}
+{\left(p-k^{\prime}\right)^{2}-m^{2}}% denominator
 \right)
 u^{s}(p)
 \]</span></p>
 </section>
-<section id="section" class="slide level2" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
-<h2 data-background-image="images/bg/theory.jpg" data-background-opacity="0.3"></h2>
-<p>This unwieldy expression can be simplified a little by expanding the binomials in the denominator, and observing for the numerator <span class="math display">\[
+<section id="invariant-amplitude-contd" class="slide level2" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
+<h2 data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Invariant amplitude cont’d</h2>
+<p>This unwieldy expression can be reduced a little by expanding the binomials in the denominator, and observing for the numerator <span class="math display">\[
 \begin{aligned}
-(\not{p}+m) \gamma^{\nu} u^{s}(p) &amp;=\left(2 p^{\nu}-\gamma^{\nu} \not{p}+\gamma^{\nu} m\right) u^{s}(p) \\
+(\not{p}+m) \gamma^{\nu} u^{s}(p) &amp;=
+\left(2 p^{\nu} - \gamma^{\nu}\not{p} + \gamma^{\nu} m\right) u^{s}(p) \\
 &amp;=2 p^{\nu} u^{s}(p)-\gamma^{\nu}\underbrace{(\not{p}-m) u^{s}(p)}_{
 \text{Dirac equation} \implies 0
 } \\
 &amp;=2_{} p^{\nu} u^{s}(p)
 \end{aligned}
+\]</span></p>
+<p>which yields the invariant amplitude in the simpler form <span class="math display">\[
+i \mathcal{M}=
+-i e^{2} \epsilon_{\mu \lambda^\prime}^{\ast}
+\left(k^{\prime}\right) \epsilon_{\nu\lambda}(k)
+\bar{u}^{s^\prime}\left(p^{\prime}\right)
+\left(
+\frac{\gamma^{\mu} \not{k}\gamma^{\nu}+2 \gamma^{\mu} p^{\nu}}
+{2 p \cdot k}
++
+\frac{-\gamma^{\nu} \not{k}^{\prime} \gamma^{\mu}+2 \gamma^{\nu} p^{\mu}}
+{-2 p \cdot k^{\prime}}\right)
+u^{s}(p)\text{.}
 \]</span></p>
 <aside class="notes">
 
@@ -278,6 +292,36 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 <h2 data-background-image="images/bg/inv_amp.jpg" data-background-opacity="0.5">Spin averages and polarisation sums</h2>
 <p>In the unpolarised case, we do not know the spins of particles. The beam of electron orientations are random, so we average over all initial particles, and sum over all final particles.</p>
 <p><span class="math display">\[
+\begin{aligned}
+\frac{1}{4} \sum_{\text {spins}}|\mathcal{M}|^{2}=
+\dfrac{e^{4}}{4}
+\bigg[
+&amp;\left(\not{p}^{\prime} + m\right)
+\left(
+\dfrac{% numerator
+\gamma^{\mu} \not{k} \gamma^{\nu}
++ 2 \gamma^{\mu} p^{\nu}}
+{2 p \cdot k}% denominator
++ \dfrac{% numerator
+\gamma^{\nu} \not{k}^{\prime} \gamma^{\mu}
+-2 \gamma^{\nu} p^{\mu}}
+{2 p \cdot k^{\prime}}% denominator
+\right) \\
+&amp; \left(\not{p} + m\right)
+\left(
+\dfrac{% numerator
+\gamma_{\nu} \not{k} \gamma_{\mu}
++ 2 \gamma_{\mu} p_{\nu}}
+{2 p \cdot k}% denominator
++ \dfrac{% numerator
+\gamma_{\mu} \not{k}^{\prime} \gamma_{\nu}
+- 2 \gamma_{\nu} p_{\mu}}
+{2 p \cdot k^{\prime}} % denominator
+\right)
+\bigg]
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
 \langle |\mu|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mu |^2
 \]</span></p>
 <aside class="notes">
@@ -333,10 +377,41 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 
 </aside>
 </section>
+<section id="phase-space" class="slide level2" data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">
+<h2 data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">Phase space</h2>
+<p><span class="math display">\[
+\int \mathrm{d} \Pi_{2}=
+\int \frac{\mathrm{d}^3 k^{\prime}}{(2 \pi)^{3} 2 E_{k^{\prime}}}
+\frac{\mathrm{d}^3 p^{\prime}}{(2 \pi)^{3} 2 E_{p^{\prime}}}
+(2 \pi)^{4} \delta^{(4)}\left(p + k - k^{\prime} - p^{\prime}\right)
+\]</span></p>
+<p><span class="math display">\[
+\delta^{(4)}\left(p + k - k^{\prime} - p^{\prime}\right) =
+\delta\left(
+E_\mathbf{p} + \omega - E_\mathbf{p}^\prime - \omega^\prime
+\right)
+\delta^{(3)}\left(
+| \mathbf{p} | + | \mathbf{k} | - | \mathbf{p}^\prime | - | \mathbf{k}^\prime |
+\right)
+\]</span></p>
+<p><span class="math display">\[
+\mathrm{d}^3 p = | \mathbf{p} |^2 \mathrm{d}p \; \mathrm{d}\Omega
+\]</span></p>
+<aside class="notes">
+
+</aside>
+</section>
 <section id="in-centre-of-mass-frame" class="slide level2" data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">In centre-of-mass frame</h2>
-<p>In the centre-of-mass frame, the integral takes the form</p>
-<p><span class="math display">\[
+<p>In the centre-of-mass frame, the 4-momenta of incoming and outgoing particles are <span class="math display">\[
+\begin{array}{cccc}
+p = (E, \mathbf{p}) &amp;
+k = (\omega, \mathbf{k}) &amp; 
+p^\prime = (E, \mathbf{p}^\prime) &amp;
+k^\prime = (\omega^\prime, \mathbf{k}^\prime) &amp; 
+\end{array}
+\]</span></p>
+<p>and the phase space integral takes the form <span class="math display">\[
 \int \mathrm{d} \Pi_{2} = \frac{1}{16 \pi^{2}} \int \mathrm{d} \Omega
 \frac{\omega}{E_{\text{CoM}}}
 \]</span></p>
@@ -346,7 +421,15 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 </section>
 <section id="in-lab-frame" class="slide level2" data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">In lab frame</h2>
-<p>Whereas in the lab frame, we obtain</p>
+<p>Whereas in the lab frame, the 4-momenta are given by <span class="math display">\[
+\begin{array}{cccc}
+p = (m, 0) &amp;
+k = (\omega, \mathbf{k}) &amp; 
+p^\prime = (E^\prime, \mathbf{p}^\prime) &amp;
+k^\prime = (\omega^\prime, \mathbf{k}^\prime) &amp; 
+\end{array}
+\]</span></p>
+<p>and the phase space integral is obtained as</p>
 <p><span class="math display">\[
 \int \mathrm{d} \Pi_{2}
 =
@@ -404,7 +487,7 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 \right] 
 \end{aligned}
 \]</span></p>
-<p>Writing in frame dependent terms obtains the famous Klein-Nishina formula</p>
+<p>Writing in terms of photon momenta obtains the famous Klein-Nishina formula <span class="citation" data-cites="klein_1929">[6]</span></p>
 <p><span class="math display">\[
 \dfrac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta} = \frac{\pi \alpha^{2}}{m^{2}} \left(\frac{\omega^{\prime}}{\omega}\right)^{2}
 \left[\frac{\omega^{\prime}}{\omega}+\frac{\omega}{\omega^{\prime}}-\sin ^{2} \theta\right]
@@ -450,6 +533,10 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 </section></section>
 <section id="conclusion" class="title-slide slide level1" data-background-image="images/bg/conclusion.jpg" data-background-opacity="0.4">
 <h1 data-background-image="images/bg/conclusion.jpg" data-background-opacity="0.4">Conclusion</h1>
+<p>In this work, we have used the new Quantum Electrodynamics to recover the known scattering relationship between light and electrons, as written down by Compton.</p>
+<p>The processes were interpreted via tree-level Feynman diagrams, at the lowest order.</p>
+<p>Future work may involve higher order calculations, and the inclusion of loops, to determine if this formulation makes new predictions about this interaction.</p>
+<p>Thank you for your attention, we welcome any questions.</p>
 <aside class="notes">
 
 </aside>
@@ -518,6 +605,9 @@ h1 .math, h2 .math, h3 .math {
 </div>
 <div id="ref-compton_1923">
 <p>[5] Compton AH. A quantum theory of the scattering of x-rays by light elements. Phys Rev 1923;21:483–502. <a href="https://doi.org/10.1103/PhysRev.21.483">https://doi.org/10.1103/PhysRev.21.483</a>.</p>
+</div>
+<div id="ref-klein_1929">
+<p>[6] Klein O, Nishina T. Über die Streuung von Strahlung durch freie Elektronen nach der neuen relativistischen Quantendynamik von Dirac. Zeitschrift Fur Physik 1929;52:853–68. <a href="https://doi.org/10.1007/BF01366453">https://doi.org/10.1007/BF01366453</a>.</p>
 </div>
 </div>
 </section>

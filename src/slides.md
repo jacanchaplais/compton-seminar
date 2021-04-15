@@ -205,33 +205,49 @@ i \mathcal{M}=i e^{2}
 \epsilon_{\nu \lambda}\left(k\right)
 \bar{u}^{s^{\prime}}\left(p^{\prime}\right)
 \left(
-    \dfrac{% numerator
-        \gamma^{\mu}(\not{p}+k+m) \gamma^{\nu}}
-        {(p+k)^{2}-m^{2}}% denominator
-    + \dfrac{% numerator
-        \gamma^{\nu}
-        \left(\not{p}-k^{\prime}+m\right)
-        \gamma^{\mu}}
-        {\left(p-k^{\prime}\right)^{2}-m^{2}}% denominator
+\dfrac{% numerator
+\gamma^{\mu}(\not{p}+k+m) \gamma^{\nu}}
+{(p+k)^{2}-m^{2}}% denominator
++ \dfrac{% numerator
+\gamma^{\nu}
+\left(\not{p}-k^{\prime}+m\right)
+\gamma^{\mu}}
+{\left(p-k^{\prime}\right)^{2}-m^{2}}% denominator
 \right)
 u^{s}(p)
 $$
 
-## {
+## Invariant amplitude cont'd {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
 }
 
-This unwieldy expression can be simplified a little by expanding the binomials
+This unwieldy expression can be reduced a little by expanding the binomials
 in the denominator, and observing for the numerator
 $$
 \begin{aligned}
-(\not{p}+m) \gamma^{\nu} u^{s}(p) &=\left(2 p^{\nu}-\gamma^{\nu} \not{p}+\gamma^{\nu} m\right) u^{s}(p) \\
+(\not{p}+m) \gamma^{\nu} u^{s}(p) &=
+\left(2 p^{\nu} - \gamma^{\nu}\not{p} + \gamma^{\nu} m\right) u^{s}(p) \\
 &=2 p^{\nu} u^{s}(p)-\gamma^{\nu}\underbrace{(\not{p}-m) u^{s}(p)}_{
 \text{Dirac equation} \implies 0
 } \\
 &=2_{} p^{\nu} u^{s}(p)
 \end{aligned}
+$$
+
+which yields the invariant amplitude in the simpler form
+$$
+i \mathcal{M}=
+-i e^{2} \epsilon_{\mu \lambda^\prime}^{\ast}
+\left(k^{\prime}\right) \epsilon_{\nu\lambda}(k)
+\bar{u}^{s^\prime}\left(p^{\prime}\right)
+\left(
+\frac{\gamma^{\mu} \not{k}\gamma^{\nu}+2 \gamma^{\mu} p^{\nu}}
+{2 p \cdot k}
++
+\frac{-\gamma^{\nu} \not{k}^{\prime} \gamma^{\mu}+2 \gamma^{\nu} p^{\mu}}
+{-2 p \cdot k^{\prime}}\right)
+u^{s}(p)\text{.}
 $$
 
 ::: notes
@@ -336,6 +352,37 @@ The beam of electron orientations are random, so we average
 over all initial particles, and sum over all final particles.
 
 $$
+\begin{aligned}
+\frac{1}{4} \sum_{\text {spins}}|\mathcal{M}|^{2}=
+\dfrac{e^{4}}{4}
+\bigg[
+&\left(\not{p}^{\prime} + m\right)
+\left(
+\dfrac{% numerator
+\gamma^{\mu} \not{k} \gamma^{\nu}
++ 2 \gamma^{\mu} p^{\nu}}
+{2 p \cdot k}% denominator
++ \dfrac{% numerator
+\gamma^{\nu} \not{k}^{\prime} \gamma^{\mu}
+-2 \gamma^{\nu} p^{\mu}}
+{2 p \cdot k^{\prime}}% denominator
+\right) \\
+& \left(\not{p} + m\right)
+\left(
+\dfrac{% numerator
+\gamma_{\nu} \not{k} \gamma_{\mu}
++ 2 \gamma_{\mu} p_{\nu}}
+{2 p \cdot k}% denominator
++ \dfrac{% numerator
+\gamma_{\mu} \not{k}^{\prime} \gamma_{\nu}
+- 2 \gamma_{\nu} p_{\mu}}
+{2 p \cdot k^{\prime}} % denominator
+\right)
+\bigg]
+\end{aligned}
+$$
+
+$$
 \langle |\mu|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mu |^2
 $$
 
@@ -402,14 +449,52 @@ data-background-opacity=0.3
 
 :::
 
+## Phase space {
+data-background-image='images/bg/phase.jpg'
+data-background-opacity=0.3
+}
+
+$$
+\int \mathrm{d} \Pi_{2}=
+\int \frac{\mathrm{d}^3 k^{\prime}}{(2 \pi)^{3} 2 E_{k^{\prime}}}
+\frac{\mathrm{d}^3 p^{\prime}}{(2 \pi)^{3} 2 E_{p^{\prime}}}
+(2 \pi)^{4} \delta^{(4)}\left(p + k - k^{\prime} - p^{\prime}\right)
+$$
+
+$$
+\delta^{(4)}\left(p + k - k^{\prime} - p^{\prime}\right) =
+\delta\left(
+E_\mathbf{p} + \omega - E_\mathbf{p}^\prime - \omega^\prime
+\right)
+\delta^{(3)}\left(
+| \mathbf{p} | + | \mathbf{k} | - | \mathbf{p}^\prime | - | \mathbf{k}^\prime |
+\right)
+$$
+
+$$
+\mathrm{d}^3 p = | \mathbf{p} |^2 \mathrm{d}p \; \mathrm{d}\Omega
+$$
+
+::: notes
+
+:::
 ## In centre-of-mass frame {
 data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
 }
 
+In the centre-of-mass frame, the 4-momenta of incoming and outgoing
+particles are
+$$
+\begin{array}{cccc}
+p = (E, \mathbf{p}) &
+k = (\omega, \mathbf{k}) & 
+p^\prime = (E, \mathbf{p}^\prime) &
+k^\prime = (\omega^\prime, \mathbf{k}^\prime) & 
+\end{array}
+$$
 
-In the centre-of-mass frame, the integral takes the form
-
+and the phase space integral takes the form
 $$
 \int \mathrm{d} \Pi_{2} = \frac{1}{16 \pi^{2}} \int \mathrm{d} \Omega
 \frac{\omega}{E_{\text{CoM}}}
@@ -424,7 +509,17 @@ data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
 }
 
-Whereas in the lab frame, we obtain
+Whereas in the lab frame, the 4-momenta are given by
+$$
+\begin{array}{cccc}
+p = (m, 0) &
+k = (\omega, \mathbf{k}) & 
+p^\prime = (E^\prime, \mathbf{p}^\prime) &
+k^\prime = (\omega^\prime, \mathbf{k}^\prime) & 
+\end{array}
+$$
+
+and the phase space integral is obtained as
 
 $$
 \int \mathrm{d} \Pi_{2}
@@ -500,7 +595,8 @@ $$
 \end{aligned}
 $$
 
-Writing in frame dependent terms obtains the famous Klein-Nishina formula
+Writing in terms of photon momenta obtains the famous Klein-Nishina formula
+[@klein_1929]
 
 $$
 \dfrac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta} = \frac{\pi \alpha^{2}}{m^{2}} \left(\frac{\omega^{\prime}}{\omega}\right)^{2}
@@ -568,6 +664,20 @@ data-background-opacity=0.3
 data-background-image='images/bg/conclusion.jpg'
 data-background-opacity=0.4
 }
+
+In this work, we have used the new Quantum Electrodynamics to recover
+the known scattering relationship between light and electrons, as written
+down by Compton.
+
+The processes were interpreted via tree-level Feynman diagrams, at the lowest
+order.
+
+Future work may involve higher order calculations, and the inclusion of
+loops, to determine if this formulation makes new predictions about
+this interaction.
+
+Thank you for your attention, we welcome any questions.
+
 
 ::: notes
 

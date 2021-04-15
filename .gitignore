@@ -15,6 +15,9 @@ coverage.xml
 # DotEnv configuration
 .env
 
+# environment config
+.envrc
+
 # Database
 *.db
 *.rdb
