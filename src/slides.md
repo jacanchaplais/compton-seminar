@@ -352,6 +352,10 @@ The beam of electron orientations are random, so we average
 over all initial particles, and sum over all final particles.
 
 $$
+\langle |\mu|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mu |^2
+$$
+
+$$
 \begin{aligned}
 \frac{1}{4} \sum_{\text {spins}}|\mathcal{M}|^{2}=
 \dfrac{e^{4}}{4}
@@ -380,10 +384,6 @@ $$
 \right)
 \bigg]
 \end{aligned}
-$$
-
-$$
-\langle |\mu|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mu |^2
 $$
 
 
