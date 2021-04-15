@@ -160,6 +160,24 @@ data-background-opacity=0.3
         color: 'white',
         incoming: {i1: '20,180', i2: '180,180'},
         outgoing: {o1: '20,20', o2: '180,20'},
+        vertex: {v1: '60,100', v2: '140,100'},
+        fermion: {line: 'i2-v2-v1-o1'},
+        photon: {line: 'i1-v1,v2-o2'},
+        symbol: {s1: ['160,95', 300, 'arrow', 60],
+                 s2: ['10, 160', 300, 'arrow', 60]},
+        label: {
+            t1: ['12, 135', 'k'],
+            t2: ['190, 75', 'k\''],
+            t3: ['100, 120', 'p&#8202;-&#8202;k\''],
+            t4: ['171, 134', 'p'],
+            t5: ['28, 75', 'p\''],
+        }
+    });
+
+    $('#feyn2').feyn({
+        color: 'white',
+        incoming: {i1: '20,180', i2: '180,180'},
+        outgoing: {o1: '20,20', o2: '180,20'},
         vertex: {v1: '100,140', v2: '100,60'},
         fermion: {line: 'i2-v1-v2-o2'},
         photon: {line: 'i1-v1,v2-o1', label: 'k'},
@@ -171,20 +189,6 @@ data-background-opacity=0.3
             t3: ['125,100', 'p&#8202;+&#8202;k'],
             t4: ['140, 145', 'p'],
             t5: ['140, 60', 'p\''],
-        }
-    });
-
-    $('#feyn2').feyn({
-        color: 'white',
-        incoming: {i1: '20,180', i2: '180,180'},
-        outgoing: {o1: '20,20', o2: '180,20'},
-        vertex: {v1: '60,100', v2: '140,100'},
-        fermion: {line: 'i2-v2-v1-o1'},
-        photon: {line: 'i1-v1,v2-o2'},
-        mathjax: true,
-        grid: {show: true, unit: 20},
-        label: {
-            t1: ['50, 130', 'k'],
         }
     });
   });
@@ -454,6 +458,7 @@ data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
 }
 
+To evaluate the phase space integral introduced earlier
 $$
 \int \mathrm{d} \Pi_{2}=
 \int \frac{\mathrm{d}^3 k^{\prime}}{(2 \pi)^{3} 2 E_{k^{\prime}}}
@@ -461,6 +466,8 @@ $$
 (2 \pi)^{4} \delta^{(4)}\left(p + k - k^{\prime} - p^{\prime}\right)
 $$
 
+we can split the momentum conserving Dirac delta into spatial and
+temporal momentum components
 $$
 \delta^{(4)}\left(p + k - k^{\prime} - p^{\prime}\right) =
 \delta\left(
@@ -471,6 +478,8 @@ E_\mathbf{p} + \omega - E_\mathbf{p}^\prime - \omega^\prime
 \right)
 $$
 
+This may then be evaluated for a specific integration measure,
+for instance we can substitute the solid angle,
 $$
 \mathrm{d}^3 p = | \mathbf{p} |^2 \mathrm{d}p \; \mathrm{d}\Omega
 $$
