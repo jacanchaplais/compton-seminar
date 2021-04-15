@@ -121,38 +121,15 @@ data-background-opacity=0.3
 ::: notes
 
 :::
-## Differential cross section {
-data-background-image='images/bg/theory.jpg'
-data-background-opacity=0.3
-}
-
-
-Cross section, $\sigma$, used to characterise interaction strength.
-Analogous to effective cross sectional area of particle through beam,
-while capturing relativistic and quantum dynamics information.
-
-$$
-\begin{aligned}
-\mathrm{d} \sigma=& \frac{1}{2 E_{\mathcal{A}} 2 E_{\mathcal{B}}\left|v_{\mathcal{A}}-v_{\mathcal{B}}\right|}\left(\prod_{f} \frac{\mathrm{d}^{3} p_{f}}{(2 \pi)^{3}} \frac{1}{2 E_{f}}\right) \\
-&\left|\mathcal{M}\left(p_{\mathcal{A}}, p_{\mathcal{B}} \rightarrow\left\{p_{f}\right\}\right)\right|^{2}(2 \pi)^{4} \delta^{(4)}\left(p_{\mathcal{A}}+p_{\mathcal{B}}-\sum p_{f}\right)
-\end{aligned}
-$$
-
-Constructed from phase space volume, invariant amplitude $\mathcal{M}$, and
-momentum conserving Dirac delta terms.
-
-::: notes
-Matrix contains mass information, momentum, dynamics of the interaction.
-
-- Explain phase space (differs frame to frame)
-- Delta function for conservation
-- Matrix element
-:::
 
 ## Invariant amplitude {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
 }
+
+The processes which contribute to this interaction
+can be written as a scattering amplitude, expressed as the sum
+of Feynman diagrams.
 
 <script>
   $(document).ready(function() {
@@ -171,6 +148,10 @@ data-background-opacity=0.3
             t3: ['100, 120', 'p&#8202;-&#8202;k\''],
             t4: ['171, 134', 'p'],
             t5: ['28, 75', 'p\''],
+            t6: ['15, 15', 'e'],
+            t7: ['190, 15', 'γ'],
+            t8: ['187, 193', 'e'],
+            t9: ['10, 190', 'γ'],
         }
     });
 
@@ -185,10 +166,14 @@ data-background-opacity=0.3
                  s2: ['20, 160', 330, 'arrow', 60]},
         label: {
             t1: ['50, 130', 'k'],
-            t2: ['50, 72', 'k\''],
+            t2: ['50, 75', 'k\''],
             t3: ['125,100', 'p&#8202;+&#8202;k'],
             t4: ['140, 145', 'p'],
             t5: ['140, 60', 'p\''],
+            t6: ['15, 15', 'γ'],
+            t7: ['190, 15', 'e'],
+            t8: ['190, 190', 'e'],
+            t9: ['10, 190', 'γ'],
         }
     });
   });
@@ -258,42 +243,16 @@ $$
 
 :::
 
-## Phase space integral {
-data-background-image='images/bg/theory.jpg'
-data-background-opacity=0.3
-}
-
-The phase space volume for a two particle collision may be defined by the
-integral,
-
-$$
-\int \mathrm{d} \Pi_{2}=\int
-\frac{\mathrm{d}^{3} k^{\prime}} {(2 \pi)^{3} 2 E_{k^{\prime}}}
-\frac{\mathrm{d}^{3} p^{\prime}}{(2 \pi)^{3} 2 E_{p^{\prime}}}(2 \pi)^{4}
-\delta^{4}\left(p+k-k^{\prime}-p^{\prime}\right) \text{.}
-$$
-
-By making careful substitutions, 
-and using fundamental theorem of calculus, can extract derivative
-of cross section wrt specific quantities, _eg._
-$\mathrm{d}\sigma / \mathrm{d}\cos\theta$.
-
-The phase space of an interaction carries its kinematic information.
-It depends on masses, energies and momenta. Therefore, it's not frame
-invariant.
-
-::: notes
-
-:::
-
 ## Kinematics {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
 .allowframebreaks
 }
 
-During this calculation, we shall make use of two different inertial reference
-frames to obtain our final result. Mandelstam variables are constructed from
+We consider two intertial frames to obtain our final result,
+so we write
+$\mathcal{M}$ in terms of Mandelstam variables.
+These are constructed from
 the incoming and outgoing momenta of the interaction.
 $$
 \begin{array}{lllllllll}
@@ -337,6 +296,62 @@ rest frame for our particle detectors, hence _lab_ frame.
 
 :::
 
+## Differential cross section {
+data-background-image='images/bg/theory.jpg'
+data-background-opacity=0.3
+}
+
+
+Cross section, $\sigma$, used to characterise interaction strength.
+Analogous to effective cross sectional area of particle through beam,
+while capturing relativistic and quantum dynamics information.
+
+$$
+\begin{aligned}
+\mathrm{d} \sigma=& \frac{1}{2 E_{\mathcal{A}} 2 E_{\mathcal{B}}\left|v_{\mathcal{A}}-v_{\mathcal{B}}\right|}\left(\prod_{f} \frac{\mathrm{d}^{3} p_{f}}{(2 \pi)^{3}} \frac{1}{2 E_{f}}\right) \\
+&\left|\mathcal{M}\left(p_{\mathcal{A}}, p_{\mathcal{B}} \rightarrow\left\{p_{f}\right\}\right)\right|^{2}(2 \pi)^{4} \delta^{(4)}\left(p_{\mathcal{A}}+p_{\mathcal{B}}-\sum p_{f}\right)
+\end{aligned}
+$$
+
+Constructed from phase space volume, invariant amplitude $\mathcal{M}$, and
+momentum conserving Dirac delta terms.
+
+::: notes
+Matrix contains mass information, momentum, dynamics of the interaction.
+
+- Explain phase space (differs frame to frame)
+- Delta function for conservation
+- Matrix element
+:::
+
+## Phase space integral {
+data-background-image='images/bg/theory.jpg'
+data-background-opacity=0.3
+}
+
+The phase space volume for a two particle collision may be defined by the
+integral,
+
+$$
+\int \mathrm{d} \Pi_{2}=\int
+\frac{\mathrm{d}^{3} k^{\prime}} {(2 \pi)^{3} 2 E_{k^{\prime}}}
+\frac{\mathrm{d}^{3} p^{\prime}}{(2 \pi)^{3} 2 E_{p^{\prime}}}(2 \pi)^{4}
+\delta^{4}\left(p+k-k^{\prime}-p^{\prime}\right) \text{.}
+$$
+
+By making careful substitutions, 
+and using fundamental theorem of calculus, can extract derivative
+of cross section wrt specific quantities, _eg._
+$\mathrm{d}\sigma / \mathrm{d}\cos\theta$.
+
+The phase space of an interaction carries its kinematic information.
+It depends on masses, energies and momenta. Therefore, it's not frame
+invariant.
+
+::: notes
+
+:::
+
 # Evaluating invariant amplitude {
 data-background-image='images/bg/inv_amp.jpg'
 data-background-opacity=0.5
@@ -356,8 +371,15 @@ The beam of electron orientations are random, so we average
 over all initial particles, and sum over all final particles.
 
 $$
-\langle |\mu|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mu |^2
+\langle |\mathcal{M}|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mathcal{M} |^2
 $$
+
+By applying the Ward identity,
+$\sum^2_{\lambda=1} \epsilon^\ast_{\mu\lambda} \epsilon_{\nu\lambda}
+\to
+- g_{\mu\nu}$, and the property of Dirac spinors,
+$\sum_{s=1}^{2} u^{s}(p) \bar{u}^{s}(p) = (\not{p}+m)$,
+to our spin averaged invariant amplitude, we obtain
 
 $$
 \begin{aligned}
@@ -400,6 +422,9 @@ data-background-image='images/bg/inv_amp.jpg'
 data-background-opacity=0.5
 }
 
+Contracting covariant and contravariant indices yields the spin averaged
+invariant amplitude as a sum of four traces.
+
 $$
 \frac{1}{4} \sum_{\text {spins}}|\mathcal{M}|^{2}
 =
@@ -420,8 +445,12 @@ $$
 \right]
 $$
 
-By using algebra that is facilitated by a number of theorems,
-the traces can be calculated.
+Clifford algebra provides simplifications, _eg._ half the traces
+contain odd number of $\gamma^\mu$ matrices, so
+are identically zero. The traces are also related, such that
+$\operatorname{Tr} B = \operatorname{Tr} C$, and similarly
+$\operatorname{Tr} D=\operatorname{Tr} A \; \left(k \leftrightarrow-k^{\prime}\right)$.
+Applying this gives
 
 $$
 \begin{aligned}
