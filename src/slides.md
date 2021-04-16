@@ -49,49 +49,31 @@ data-background-opacity=0.3
 data-background-image='images/bg/motivation.jpg'
 data-background-opacity=0.3
 }
+
 :::::::::::::: {.columns}
 ::: {.column width="47%"}
-In 1927, Dirac proposed that a quantum description of the interaction between
-radiation and matter  may be elevated to a relativistic
-theory by quantizing the electromagnetic field [@dirac_1927].
+In 1927, Dirac proposed that quantum interaction between
+radiation and matter may be elevated to relativistic
+theory by quantizing electromagnetic field [@dirac_1927].
 
-
-![](images/dirac.jpg){ width=70% }
-:::
-::: {.column width="47%"}
-However, in 1930 Oppenheimer discovered that perturbative
+However, in 1930 Oppenheimer discovered perturbative
 approaches led to unphysical results beyond first order calculations,
-due to self-interaction
-[@oppenheimer_1930].
+due to self-interaction [@oppenheimer_1930].
 
-![](images/oppenheimer.jpg){ width=70% }
+![](images/dirac.jpg){ .dp }
+![](images/oppenheimer.jpg){ .dp }
 :::
-::::::::::::::
-
-::: notes
-
-:::
-
-## Making sense of the idea {
-data-background-image='images/bg/motivation.jpg'
-data-background-opacity=0.3
-}
-
-:::::::::::::: {.columns}
 ::: {.column width="47%"}
 
 In 1947 Bethe suggested a mechanism for handling the infinite terms, called
 renormalisation [@bethe_1947]. This sparked renewed interest in quantum fields.
 
-![](images/bet.jpg){ width=70% }
-
-:::
-::: {.column width="47%"}
 Following this, the theory was developed rapidly, with Feynman's diagrammatic
 contribution reducing the technical barrier for performing calculations
 [@feynman_1949b].
 
-![](images/feyn.jpg){ width=70% }
+![](images/be.jpg){ .dp }
+![](images/fey.jpg){ .dp }
 
 :::
 ::::::::::::::
@@ -184,6 +166,7 @@ $i\mathcal{M} =$
 <div class='feyn-diags' id='feyn1'></div>
 $+$
 <div class='feyn-diags' id='feyn2'></div>
+![](images/white-arrow.svg){ #time-arrow }
 </div>
 
 By applying the Feynman rules to these diagrams and grouping terms, we obtain
@@ -205,6 +188,15 @@ i \mathcal{M}=i e^{2}
 \right)
 u^{s}(p)
 $$
+
+::: notes
+S = 1 + iT
+
+Expectation value of iT between two arbitrary states is:
+
+i M * (2π)^4 δ^4(Σpf - Σpi) = Σ connected, amput feyn diags with incoming
+mmtm pi and outg. mmtm pf
+:::
 
 ## Invariant amplitude cont'd {
 data-background-image='images/bg/theory.jpg'
@@ -317,11 +309,7 @@ Constructed from phase space volume, invariant amplitude $\mathcal{M}$, and
 momentum conserving Dirac delta terms.
 
 ::: notes
-Matrix contains mass information, momentum, dynamics of the interaction.
-
-- Explain phase space (differs frame to frame)
-- Delta function for conservation
-- Matrix element
+Fermi's golden rule relates invariant amplitude with cross section.
 :::
 
 ## Phase space integral {
@@ -767,6 +755,12 @@ p.author {
     padding: 0 0 0 2.5%;
 }
 
+.column .dp {
+    display: inline-block;
+    padding: 10px;
+    width: 40%;
+}
+
 #feyn-diag-container .math.inline {
     position: relative;
     bottom: 90px;
@@ -774,6 +768,22 @@ p.author {
 
 .feyn-diags {
     display: inline-block;
+}
+
+#feyn2 + p {
+    position: relative;
+    left: 2em;
+    vertical-align: super;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background: none;
+}
+
+#time-arrow {
+    margin: 0;
+    padding: 0;
+    background: none;
 }
 
 h1 .math, h2 .math, h3 .math {

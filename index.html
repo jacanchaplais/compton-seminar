@@ -78,26 +78,13 @@
 <h2 data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">Quantum fields: a new approach</h2>
 <div class="columns">
 <div class="column" style="width:47%;">
-<p>In 1927, Dirac proposed that a quantum description of the interaction between radiation and matter may be elevated to a relativistic theory by quantizing the electromagnetic field <span class="citation" data-cites="dirac_1927">[1]</span>.</p>
-<p><img data-src="images/dirac.jpg" style="width:70.0%" /></p>
+<p>In 1927, Dirac proposed that quantum interaction between radiation and matter may be elevated to relativistic theory by quantizing electromagnetic field <span class="citation" data-cites="dirac_1927">[1]</span>.</p>
+<p>However, in 1930 Oppenheimer discovered perturbative approaches led to unphysical results beyond first order calculations, due to self-interaction <span class="citation" data-cites="oppenheimer_1930">[2]</span>.</p>
+<p><img data-src="images/dirac.jpg" class="dp" /> <img data-src="images/oppenheimer.jpg" class="dp" /></p>
 </div><div class="column" style="width:47%;">
-<p>However, in 1930 Oppenheimer discovered that perturbative approaches led to unphysical results beyond first order calculations, due to self-interaction <span class="citation" data-cites="oppenheimer_1930">[2]</span>.</p>
-<p><img data-src="images/oppenheimer.jpg" style="width:70.0%" /></p>
-</div>
-</div>
-<aside class="notes">
-
-</aside>
-</section>
-<section id="making-sense-of-the-idea" class="slide level2" data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">
-<h2 data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">Making sense of the idea</h2>
-<div class="columns">
-<div class="column" style="width:47%;">
 <p>In 1947 Bethe suggested a mechanism for handling the infinite terms, called renormalisation <span class="citation" data-cites="bethe_1947">[3]</span>. This sparked renewed interest in quantum fields.</p>
-<p><img data-src="images/bet.jpg" style="width:70.0%" /></p>
-</div><div class="column" style="width:47%;">
 <p>Following this, the theory was developed rapidly, with Feynman’s diagrammatic contribution reducing the technical barrier for performing calculations <span class="citation" data-cites="feynman_1949b">[4]</span>.</p>
-<p><img data-src="images/feyn.jpg" style="width:70.0%" /></p>
+<p><img data-src="images/be.jpg" class="dp" /> <img data-src="images/fey.jpg" class="dp" /></p>
 </div>
 </div>
 <aside class="notes">
@@ -178,6 +165,7 @@
 <div id="feyn2" class="feyn-diags">
 
 </div>
+<p><img data-src="images/white-arrow.svg" id="time-arrow" /></p>
 </div>
 <p>By applying the Feynman rules to these diagrams and grouping terms, we obtain <span class="math display">\[
 i \mathcal{M}=i e^{2}
@@ -197,6 +185,11 @@ i \mathcal{M}=i e^{2}
 \right)
 u^{s}(p)
 \]</span></p>
+<aside class="notes">
+<p>S = 1 + iT</p>
+<p>Expectation value of iT between two arbitrary states is:</p>
+<p>i M * (2π)^4 δ^4(Σpf - Σpi) = Σ connected, amput feyn diags with incoming mmtm pi and outg. mmtm pf</p>
+</aside>
 </section>
 <section id="invariant-amplitude-contd" class="slide level2" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Invariant amplitude cont’d</h2>
@@ -271,12 +264,7 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 \]</span></p>
 <p>Constructed from phase space volume, invariant amplitude <span class="math inline">\(\mathcal{M}\)</span>, and momentum conserving Dirac delta terms.</p>
 <aside class="notes">
-<p>Matrix contains mass information, momentum, dynamics of the interaction.</p>
-<ul>
-<li>Explain phase space (differs frame to frame)</li>
-<li>Delta function for conservation</li>
-<li>Matrix element</li>
-</ul>
+<p>Fermi’s golden rule relates invariant amplitude with cross section.</p>
 </aside>
 </section>
 <section id="phase-space-integral" class="slide level2" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
@@ -592,6 +580,12 @@ p.author {
     padding: 0 0 0 2.5%;
 }
 
+.column .dp {
+    display: inline-block;
+    padding: 10px;
+    width: 40%;
+}
+
 #feyn-diag-container .math.inline {
     position: relative;
     bottom: 90px;
@@ -599,6 +593,22 @@ p.author {
 
 .feyn-diags {
     display: inline-block;
+}
+
+#feyn2 + p {
+    position: relative;
+    left: 2em;
+    vertical-align: super;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background: none;
+}
+
+#time-arrow {
+    margin: 0;
+    padding: 0;
+    background: none;
 }
 
 h1 .math, h2 .math, h3 .math {
