@@ -117,14 +117,18 @@ of Feynman diagrams.
   $(document).ready(function() {
     $('#feyn1').feyn({
         color: 'white',
+        selector: true,
         incoming: {i1: '20,180', i2: '180,180'},
         outgoing: {o1: '20,20', o2: '180,20'},
         vertex: {v1: '60,100', v2: '140,100'},
-        fermion: {line: 'i2-v2-v1-o1'},
-        photon: {line: 'i1-v1,v2-o2'},
+//        fermion: {line: 'i2-v2-v1-o1', color: '#c1fba4'},
+//        photon: {line: 'i1-v1,v2-o2', color: '#ffef9f'},
+        fermion: {line: 'i2-v2-v1-o1', color: '#fe6d73'},
+        photon: {line: 'i1-v1,v2-o2', color: '#ffe66d'},
         symbol: {s1: ['160,95', 300, 'arrow', 60],
                  s2: ['10, 160', 300, 'arrow', 60]},
         label: {
+            size: 18,
             t1: ['12, 135', 'k'],
             t2: ['190, 75', 'k\''],
             t3: ['100, 120', 'p&#8202;-&#8202;k\''],
@@ -134,19 +138,26 @@ of Feynman diagrams.
             t7: ['190, 15', 'γ'],
             t8: ['187, 193', 'e'],
             t9: ['10, 190', 'γ'],
+        },
+        node: {
+            show: true,
+            color: '#b5e48c',
+            fill: '#b5e48c'
         }
     });
 
     $('#feyn2').feyn({
         color: 'white',
+        selector: true,
         incoming: {i1: '20,180', i2: '180,180'},
         outgoing: {o1: '20,20', o2: '180,20'},
         vertex: {v1: '100,140', v2: '100,60'},
-        fermion: {line: 'i2-v1-v2-o2'},
-        photon: {line: 'i1-v1,v2-o1', label: 'k'},
+        fermion: {line: 'i2-v1-v2-o2', color: '#fe6d73'},
+        photon: {line: 'i1-v1,v2-o1', label: 'k', color: '#ffe66d'},
         symbol: {s1: ['80,70', 210, 'arrow', 60],
                  s2: ['20, 160', 330, 'arrow', 60]},
         label: {
+            size: 18,
             t1: ['50, 130', 'k'],
             t2: ['50, 75', 'k\''],
             t3: ['125,100', 'p&#8202;+&#8202;k'],
@@ -156,7 +167,13 @@ of Feynman diagrams.
             t7: ['190, 15', 'e'],
             t8: ['190, 190', 'e'],
             t9: ['10, 190', 'γ'],
+        },
+        node: {
+            show: true,
+            color: '#b5e48c',
+            fill: '#b5e48c'
         }
+
     });
   });
 </script>
@@ -171,22 +188,22 @@ $+$
 
 By applying the Feynman rules to these diagrams and grouping terms, we obtain
 $$
-i \mathcal{M}=i e^{2}
-\epsilon_{\mu \lambda^\prime}^{\ast}
-\left(k^{\prime}\right)
-\epsilon_{\nu \lambda}\left(k\right)
-\bar{u}^{s^{\prime}}\left(p^{\prime}\right)
+i \mathcal{M}=i {\color{#b5e48c} e^{2}}
+{\color{#ffe66d} \epsilon_{\mu \lambda^\prime}^{\ast} \left(k^{\prime}\right)}
+{\color{#ffe66d} \epsilon_{\nu \lambda}\left(k\right)}
+{\color{#fe6d73} \bar{u}^{s^{\prime}}\left(p^{\prime}\right) }
 \left(
-\dfrac{% numerator
-\gamma^{\mu}(\not{p}+k+m) \gamma^{\nu}}
-{(p+k)^{2}-m^{2}}% denominator
-+ \dfrac{% numerator
-\gamma^{\nu}
+{\color{#5adbff} \dfrac{% numerator
+{\color{#b5e48c} \gamma^{\mu}}(\not{p}+k+m) {\color{#b5e48c} \gamma^{\nu}}}
+{(p+k)^{2}-m^{2}}}% denominator
++ {\color{#5adbff} \dfrac{% numerator
+{\color{#b5e48c} \gamma^{\nu}}
 \left(\not{p}-k^{\prime}+m\right)
-\gamma^{\mu}}
+{\color{#b5e48c} \gamma^{\mu}}}
 {\left(p-k^{\prime}\right)^{2}-m^{2}}% denominator
+}
 \right)
-u^{s}(p)
+{\color{#fe6d73} u^{s}(p)}
 $$
 
 ::: notes
@@ -768,6 +785,21 @@ p.author {
 
 .feyn-diags {
     display: inline-block;
+}
+
+#feyn_v2_v1_line, #feyn_v2_v1_line_arrow,
+#feyn2_v1_v2_line, #feyn2_v1_v2_line_arrow  {
+    stroke: #5adbff;
+    fill:   #5adbff;
+}
+
+.node circle {
+    display: none;
+}
+
+.node circle#feyn_v1_dot, .node circle#feyn_v2_dot,
+.node circle#feyn2_v1_dot, .node circle#feyn2_v2_dot {
+    display: inline;
 }
 
 #feyn2 + p {
