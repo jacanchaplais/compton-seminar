@@ -395,9 +395,9 @@ data-background-image='images/bg/inv_amp.jpg'
 data-background-opacity=0.5
 }
 
-In the unpolarised case, we do not know the spins of particles.
-The beam of electron orientations are random, so we average
-over all initial particles, and sum over all final particles.
+In the unpolarised case, we don't know the spins of particles.
+The electron orientations are random, so we average
+over initial particles, and sum over final particles.
 
 $$
 \langle |\mathcal{M}|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mathcal{M} |^2
@@ -613,7 +613,9 @@ data-background-opacity=0.3
 }
 
 We may now bring our equations for the phase space integral and the invariant
-amplitude together. Writing in terms of the Mandelstam variables in the
+amplitude together. Substituting the integration measure, $\mathrm{d} t =
+-2\omega^2\mathrm{d}\Omega / 2\pi$ and writing in
+Mandelstam variables in the
 centre-of-momentum frame, we obtain
 $$
 \begin{aligned}
@@ -653,8 +655,9 @@ data-background-image='images/bg/cross.jpg'
 data-background-opacity=0.3
 }
 
-We perform the same procedure, in the lab frame, to obtain the angular
-dependence.
+We perform the same procedure in the lab frame, using integration
+measure $\mathrm{d}\Omega = -2\pi\mathrm{d}(\cos\theta)$, to obtain
+the angular dependence.
 
 $$
 \begin{aligned}
