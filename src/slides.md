@@ -403,12 +403,12 @@ $$
 \langle |\mathcal{M}|^2 \rangle = \dfrac{1}{4} \sum_\text{spins} | \mathcal{M} |^2
 $$
 
-By applying the Ward identity,
+We apply the replacement
 $\sum^2_{\lambda=1} \epsilon^\ast_{\mu\lambda} \epsilon_{\nu\lambda}
 \to
 - g_{\mu\nu}$, and the property of Dirac spinors,
 $\sum_{s=1}^{2} u^{s}(p) \bar{u}^{s}(p) = (\not{p}+m)$,
-to our spin averaged invariant amplitude, we obtain
+to our spin averaged invariant amplitude, to obtain
 
 $$
 \begin{aligned}
