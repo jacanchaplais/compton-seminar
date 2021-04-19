@@ -94,7 +94,7 @@
 <section id="a-need-for-confirmation" class="slide level2" data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/motivation.jpg" data-background-opacity="0.3">A need for confirmation</h2>
 <p>In this talk we apply the theoretical work that has been done so far. Using these new calculation techniques, we attempt to recover Compton scattering.</p>
-<p>This choice is symbolic of the movement semi-classical particle physics, to a full acceptance of the quantum theory <span class="citation" data-cites="compton_1923">[5]</span>.</p>
+<p>This choice is symbolic of movement from semi-classical particle physics, to a full acceptance of the quantum theory <span class="citation" data-cites="compton_1923">[5]</span>.</p>
 <aside class="notes">
 
 </aside>
@@ -206,6 +206,32 @@ i \mathcal{M}=i {\color{#b5e48c} e^{2}}
 <p>S = 1 + iT</p>
 <p>Expectation value of iT between two arbitrary states is:</p>
 <p>i M * (2π)^4 δ^4(Σpf - Σpi) = Σ connected, amput feyn diags with incoming mmtm pi and outg. mmtm pf</p>
+<p><strong>Feynman rules:</strong></p>
+<p>For fermions w/ mmtm p &amp; spin s</p>
+<ul>
+<li>Intern ferm line=&gt; i / (pslash - m + i ε)</li>
+<li>Incom ferm line w/ mmtm p &amp; spin s =&gt; u</li>
+<li><span class="irelev">Incom aferm =&gt; νbar</span></li>
+<li>outg ferm =&gt; ubar</li>
+<li><span class="irelev">outg. aferm =&gt; ν</span></li>
+<li><span class="irelev">tr matr prods for ferm loops_</span></li>
+<li><span class="irelev">-ve from fermi stats, ~ (-1)^(num loops)</span></li>
+</ul>
+<p>For photons w/ mmtm p at point μ</p>
+<ul>
+<li>vrtx at μ =&gt; -iqγ^μ</li>
+<li><span class="irelev">intern photon =&gt; D~μν(k) = - i(gμν + (1 - ξ)kμν / k^2) / (k^2 + iε)</span>
+<ul>
+<li><span class="irelev">Feyn guage =&gt; ξ = 1</span></li>
+</ul></li>
+<li>incom photon =&gt; εμλ(p)</li>
+<li>outg photon =&gt; ε*μλ(p)</li>
+</ul>
+<style>
+.irelev { 
+    color: red;
+}
+</style>
 </aside>
 </section>
 <section id="invariant-amplitude-contd" class="slide level2" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
@@ -294,7 +320,7 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 \delta^{(4)}\left(p+k-k^{\prime}-p^{\prime}\right) \text{.}
 \]</span></p>
 <p>By making careful substitutions, and using fundamental theorem of calculus, can extract derivative of cross section wrt specific quantities, <em>eg.</em> <span class="math inline">\(\mathrm{d}\sigma / \mathrm{d}\cos\theta\)</span>.</p>
-<p>The phase space of an interaction carries its kinematic information. It depends on masses, energies and momenta. Therefore, it’s not frame invariant.</p>
+<p>The phase space of an interaction carries its kinematic information. The Dirac delta, encoding momentum conservation, means that it is not Lorentz invariant.</p>
 <aside class="notes">
 
 </aside>
@@ -405,7 +431,7 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 \frac{\mathrm{d}^3 p^{\prime}}{(2 \pi)^{3} 2 E_{p^{\prime}}}
 (2 \pi)^{4} \delta^{(4)}\left(p + k - k^{\prime} - p^{\prime}\right)
 \]</span></p>
-<p>we can split the momentum conserving Dirac delta into spatial and temporal momentum components <span class="math display">\[
+<p>The momentum conserving Dirac delta reduces the calculation to a two dimensional integral, rather than a six dimensional one. We split into spatial and temporal momentum components <span class="math display">\[
 \delta^{(4)}\left(p + k - k^{\prime} - p^{\prime}\right) =
 \delta\left(
 E_\mathbf{p} + \omega - E_\mathbf{p}^\prime - \omega^\prime
@@ -414,7 +440,7 @@ E_\mathbf{p} + \omega - E_\mathbf{p}^\prime - \omega^\prime
 | \mathbf{p} | + | \mathbf{k} | - | \mathbf{p}^\prime | - | \mathbf{k}^\prime |
 \right)
 \]</span></p>
-<p>This may then be evaluated for a specific integration measure, for instance we can substitute the solid angle, <span class="math display">\[
+<p>This may then be evaluated for a specific integration measure, for instance we can substitute the solid angle <span class="math display">\[
 \mathrm{d}^3 p = | \mathbf{p} |^2 \mathrm{d}p \; \mathrm{d}\Omega
 \]</span></p>
 <aside class="notes">
@@ -484,6 +510,7 @@ k^\prime = (\omega^\prime, \mathbf{k}^\prime) &amp;
 \right]
 \end{aligned}
 \]</span></p>
+<p>Expressing in terms of scattering angle, <span class="math inline">\(t = \frac{ -2\left(\frac{s-m^{2}}{2 m}\right)^{2}(1-\cos \theta) } { 1+\left(\frac{s-m^{2}}{2 m^{2}}\right)(1-\cos \theta) }\)</span>, and applying the range of <span class="math inline">\(\cos\theta\)</span> to this equation yields the domain for <span class="math inline">\(\mathrm{d}\sigma / \mathrm{d}t\)</span> <span class="math display">\[-\dfrac{\left(s - m^2\right)^2}{s} \leq t \leq 0\]</span></p>
 <aside class="notes">
 
 </aside>

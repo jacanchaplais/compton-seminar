@@ -89,7 +89,7 @@ data-background-opacity=0.3
 In this talk we apply the theoretical work that has been done so far.
 Using these new calculation techniques, we attempt to recover Compton scattering.
 
-This choice is symbolic of the movement semi-classical particle physics,
+This choice is symbolic of movement from semi-classical particle physics,
 to a full acceptance of the quantum theory [@compton_1923].
 
 ::: notes
@@ -213,6 +213,32 @@ Expectation value of iT between two arbitrary states is:
 
 i M * (2π)^4 δ^4(Σpf - Σpi) = Σ connected, amput feyn diags with incoming
 mmtm pi and outg. mmtm pf
+
+__Feynman rules:__
+
+For fermions w/ mmtm p & spin s
+
+- Intern ferm line=> i / (pslash - m + i ε)
+- Incom ferm line w/ mmtm p & spin s => u
+- <span class='irelev'>Incom aferm => νbar</span>
+- outg ferm => ubar
+- <span class='irelev'>outg. aferm => ν</span>
+- <span class='irelev'>tr matr prods for ferm loops_</span>
+- <span class='irelev'>-ve from fermi stats, ~ (-1)^(num loops)</span>
+
+For photons w/ mmtm p at point μ
+
+- vrtx at μ => -iqγ^μ
+- <span class='irelev'>intern photon => D~μν(k) = - i(gμν + (1 - ξ)kμν / k^2) / (k^2 + iε)</span>
+  - <span class='irelev'>Feyn guage => ξ = 1</span>
+- incom photon => εμλ(p)
+- outg photon => ε\*μλ(p)
+
+<style>
+.irelev { 
+    color: red;
+}
+</style>
 :::
 
 ## Invariant amplitude cont'd {
@@ -350,8 +376,8 @@ of cross section wrt specific quantities, _eg._
 $\mathrm{d}\sigma / \mathrm{d}\cos\theta$.
 
 The phase space of an interaction carries its kinematic information.
-It depends on masses, energies and momenta. Therefore, it's not frame
-invariant.
+The Dirac delta, encoding momentum conservation, means that
+it is not Lorentz invariant.
 
 ::: notes
 
@@ -500,8 +526,9 @@ $$
 (2 \pi)^{4} \delta^{(4)}\left(p + k - k^{\prime} - p^{\prime}\right)
 $$
 
-we can split the momentum conserving Dirac delta into spatial and
-temporal momentum components
+The momentum conserving Dirac delta reduces the calculation to a two
+dimensional integral, rather than a six dimensional one. We split into
+spatial and temporal momentum components
 $$
 \delta^{(4)}\left(p + k - k^{\prime} - p^{\prime}\right) =
 \delta\left(
@@ -513,7 +540,7 @@ E_\mathbf{p} + \omega - E_\mathbf{p}^\prime - \omega^\prime
 $$
 
 This may then be evaluated for a specific integration measure,
-for instance we can substitute the solid angle,
+for instance we can substitute the solid angle
 $$
 \mathrm{d}^3 p = | \mathbf{p} |^2 \mathrm{d}p \; \mathrm{d}\Omega
 $$
@@ -608,6 +635,17 @@ $$
 \end{aligned}
 $$
 
+Expressing in terms of scattering angle,
+$t =
+\frac{
+-2\left(\frac{s-m^{2}}{2 m}\right)^{2}(1-\cos \theta)
+}
+{
+1+\left(\frac{s-m^{2}}{2 m^{2}}\right)(1-\cos \theta)
+}$,
+and applying the range of $\cos\theta$ to this equation yields the domain
+for $\mathrm{d}\sigma / \mathrm{d}t$
+$$-\dfrac{\left(s - m^2\right)^2}{s} \leq t \leq 0$$
 
 ::: notes
 
