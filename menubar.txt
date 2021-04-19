@@ -1,0 +1,24 @@
+# add stylesheet to head
+<link rel="stylesheet" href="src/reveal.js/css/theme/simplemenu.css">
+
+# add this as first elem in reveal
+<div class="menubar">
+<ul class="menu">
+    <li><a href="#/motivation">Motivation</a></li>
+    <li><a href="#/theory">Theory</a></li>
+    <li><a href="#/evaluating-invariant-amplitude">Evaluating invariant amplitude</a></li>
+    <li><a href="#/phase-space-integral-1">Phase space integral</a></li>
+    <li><a href="#/obtaining-the-cross-section">Obtaining cross section</a></li>
+    <li><a href="#/results">Results</a></li>
+    <li><a href="#/conclusion">Conclusion</a></li>
+</ul>
+</div>
+
+# finally, add to init
+// Optional reveal.js plugins
+simplemenu: {
+    menuselector: '.menu li',
+    activeclass: 'menu-active',
+},
+dependencies: [
+  { src: 'src/reveal.js/plugin/simplemenu/simplemenu.js' },

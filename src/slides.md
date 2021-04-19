@@ -39,6 +39,7 @@ data-background-opacity=0.5
 # Motivation {
 data-background-image='images/bg/motivation.jpg'
 data-background-opacity=0.3
+data-menu-title="motivation"
 }
 
 ::: notes
@@ -48,6 +49,7 @@ data-background-opacity=0.3
 ## Quantum fields: a new approach {
 data-background-image='images/bg/motivation.jpg'
 data-background-opacity=0.3
+data-menu-title="motivation"
 }
 
 :::::::::::::: {.columns}
@@ -85,6 +87,7 @@ contribution reducing the technical barrier for performing calculations
 ## A need for confirmation {
 data-background-image='images/bg/motivation.jpg'
 data-background-opacity=0.3
+data-menu-title="motivation"
 }
 In this talk we apply the theoretical work that has been done so far.
 Using these new calculation techniques, we attempt to recover Compton scattering.
@@ -98,6 +101,7 @@ to a full acceptance of the quantum theory [@compton_1923].
 # Theory {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
+data-menu-title="theory"
 }
 
 ::: notes
@@ -107,6 +111,7 @@ data-background-opacity=0.3
 ## Invariant amplitude {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
+data-menu-title="theory"
 }
 
 The processes which contribute to this interaction
@@ -244,6 +249,7 @@ For photons w/ mmtm p at point μ
 ## Invariant amplitude cont'd {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
+data-menu-title="theory"
 }
 
 This unwieldy expression can be reduced a little by expanding the binomials
@@ -282,6 +288,7 @@ $$
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
 .allowframebreaks
+data-menu-title="theory"
 }
 
 We consider two intertial frames to obtain our final result,
@@ -307,6 +314,7 @@ quantities allows us to jump between frames with ease.
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
 .allowframebreaks
+data-menu-title="theory"
 }
 
 Inertial frame in which sum of spatial momenta is zero.
@@ -320,6 +328,7 @@ Inertial frame in which sum of spatial momenta is zero.
 ## Lab frame {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
+data-menu-title="theory"
 }
 
 Inertial frame in which the electron is at rest. This will also be the assumed
@@ -334,6 +343,7 @@ rest frame for our particle detectors, hence _lab_ frame.
 ## Differential cross section {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
+data-menu-title="theory"
 }
 
 
@@ -358,6 +368,7 @@ Fermi's golden rule relates invariant amplitude with cross section.
 ## Phase space integral {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
+data-menu-title="theory"
 }
 
 The phase space volume for a two particle collision may be defined by the
@@ -384,6 +395,7 @@ The phase space of an interaction carries its kinematic information.
 # Evaluating invariant amplitude {
 data-background-image='images/bg/inv_amp.jpg'
 data-background-opacity=0.5
+data-menu-title="evaluating-invariant-amplitude"
 }
 
 ::: notes
@@ -393,6 +405,7 @@ data-background-opacity=0.5
 ## Spin averages and polarisation sums {
 data-background-image='images/bg/inv_amp.jpg'
 data-background-opacity=0.5
+data-menu-title="evaluating-invariant-amplitude"
 }
 
 In the unpolarised case, we don't know the spins of particles.
@@ -449,6 +462,7 @@ $$
 ## Working out the traces {
 data-background-image='images/bg/inv_amp.jpg'
 data-background-opacity=0.5
+data-menu-title="evaluating-invariant-amplitude"
 }
 
 Contracting covariant and contravariant indices yields the spin averaged
@@ -505,6 +519,7 @@ $$
 # Phase space integral {
 data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
+data-menu-title="phase-space-integral-1"
 }
 
 ::: notes
@@ -514,6 +529,7 @@ data-background-opacity=0.3
 ## Phase space {
 data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
+data-menu-title="phase-space-integral-1"
 }
 
 To evaluate the phase space integral introduced earlier
@@ -549,6 +565,7 @@ $$
 ## In centre-of-momentum frame {
 data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
+data-menu-title="phase-space-integral-1"
 }
 
 In the centre-of-momentum frame, 4-momenta of incoming and outgoing
@@ -574,6 +591,7 @@ $$
 ## In lab frame {
 data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
+data-menu-title="phase-space-integral-1"
 }
 
 Whereas in the lab frame, the 4-momenta are given by
@@ -601,6 +619,7 @@ $$
 # Obtaining the cross section {
 data-background-image='images/bg/cross.jpg'
 data-background-opacity=0.3
+data-menu-title="obtaining-the-cross-section"
 }
 
 ::: notes
@@ -610,6 +629,7 @@ data-background-opacity=0.3
 ## Function of squared momentum transfer {
 data-background-image='images/bg/cross.jpg'
 data-background-opacity=0.3
+data-menu-title="obtaining-the-cross-section"
 }
 
 We may now bring our equations for the phase space integral and the invariant
@@ -653,6 +673,7 @@ $$-\dfrac{\left(s - m^2\right)^2}{s} \leq t \leq 0$$
 ## Function of angle {
 data-background-image='images/bg/cross.jpg'
 data-background-opacity=0.3
+data-menu-title="obtaining-the-cross-section"
 }
 
 We perform the same procedure in the lab frame, using integration
@@ -691,6 +712,7 @@ $$
 # Results {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
+data-menu-title="results"
 }
 
 ::: notes
@@ -700,6 +722,7 @@ data-background-opacity=0.3
 ## QED prediction for $\rm{d}\sigma/\rm{d}\cos\theta$ {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
+data-menu-title="results"
 }
 
 ![Showing transition from wave-like behaviour of electromagnetic radiation
@@ -712,6 +735,7 @@ to particle-like as collision energy increased.](images/plots/dcos.svg){ width=6
 ## QED prediction for $\rm{d}\sigma/\rm{d}t$ {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
+data-menu-title="results"
 }
 
 ![Wave-like behaviour in low energy regime, predicted by
@@ -724,6 +748,7 @@ Thomson scattering [@thomson_1906].](images/plots/dt_low.svg){ width=65% }
 ## QED prediction for $\rm{d}\sigma/\rm{d}t$ {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
+data-menu-title="results"
 }
 
 ![Scattering behaviour shows influence of photon imparting
@@ -736,6 +761,7 @@ impulse to electron.](images/plots/dt_medium.svg){ width=65% }
 ## QED prediction for $\rm{d}\sigma/\rm{d}t$ {
 data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
+data-menu-title="results"
 }
 
 ![Scattering behaviour dominated by particle-like collisions
@@ -748,6 +774,7 @@ and momentum transfer.](images/plots/dt_high.svg){ width=65% }
 # Conclusion {
 data-background-image='images/bg/conclusion.jpg'
 data-background-opacity=0.4
+data-menu-title="conclusion"
 }
 
 In this work, we have used the new Quantum Electrodynamics to recover
@@ -804,6 +831,15 @@ p.author {
     border-radius: 10px;
     background: rgb(38 34 64 / 72%);
     backdrop-filter: blur(3px);
+}
+
+.reveal div.menubar {
+    background: rgb(38 34 64 / 72%);
+    border: 0;
+}
+
+.menubar li.menu-active a {
+    color: white;
 }
 
 .column { /* left col */
