@@ -699,7 +699,8 @@ data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
 
-![](images/plots/dcos.svg){ width=80% }
+![Showing transition from wave-like behaviour of electromagnetic radiation
+to particle-like as collision energy increased.](images/plots/dcos.svg){ width=65% }
 
 ::: notes
 
@@ -710,7 +711,8 @@ data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
 
-![](images/plots/dt_low.svg){ width=75% }
+![Wave-like behaviour in low energy regime, predicted by
+Thomson scattering [@thomson_1906].](images/plots/dt_low.svg){ width=65% }
 
 ::: notes
 
@@ -721,7 +723,8 @@ data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
 
-![](images/plots/dt_medium.svg){ width=75% }
+![Scattering behaviour shows influence of photon imparting
+impulse to electron.](images/plots/dt_medium.svg){ width=65% }
 
 ::: notes
 
@@ -732,7 +735,8 @@ data-background-image='images/bg/results.jpg'
 data-background-opacity=0.3
 }
 
-![](images/plots/dt_high.svg){ width=75% }
+![Scattering behaviour dominated by particle-like collisions
+and momentum transfer.](images/plots/dt_high.svg){ width=65% }
 
 ::: notes
 
@@ -855,5 +859,9 @@ p.author {
 
 h1 .math, h2 .math, h3 .math {
     text-transform: none !important;
+}
+
+.references {
+    font-size: 0.85em;
 }
 </style>
