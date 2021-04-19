@@ -276,11 +276,11 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 
 </aside>
 </section>
-<section id="centre-of-mass-frame" class="slide level2 allowframebreaks" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
-<h2 class="allowframebreaks" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Centre-of-mass frame</h2>
+<section id="centre-of-momentum-frame" class="slide level2 allowframebreaks" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">
+<h2 class="allowframebreaks" data-background-image="images/bg/theory.jpg" data-background-opacity="0.3">Centre-of-momentum frame</h2>
 <p>Inertial frame in which sum of spatial momenta is zero.</p>
 <figure>
-<img data-src="images/com-frame.svg" alt="" /><figcaption>Centre of mass frame diagram</figcaption>
+<img data-src="images/com-frame.svg" alt="" /><figcaption>Centre-of-momentum frame diagram</figcaption>
 </figure>
 <aside class="notes">
 
@@ -320,7 +320,7 @@ u &amp;=&amp; \left(k^{\prime}-p\right)^{2} &amp;=&amp; k^{\prime 2}+p^{2}-2 k^{
 \delta^{(4)}\left(p+k-k^{\prime}-p^{\prime}\right) \text{.}
 \]</span></p>
 <p>By making careful substitutions, and using fundamental theorem of calculus, can extract derivative of cross section wrt specific quantities, <em>eg.</em> <span class="math inline">\(\mathrm{d}\sigma / \mathrm{d}\cos\theta\)</span>.</p>
-<p>The phase space of an interaction carries its kinematic information. The Dirac delta, encoding momentum conservation, means that it is not Lorentz invariant.</p>
+<p>The phase space of an interaction carries its kinematic information.</p>
 <aside class="notes">
 
 </aside>
@@ -447,17 +447,16 @@ E_\mathbf{p} + \omega - E_\mathbf{p}^\prime - \omega^\prime
 
 </aside>
 </section>
-<section id="in-centre-of-mass-frame" class="slide level2" data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">
-<h2 data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">In centre-of-mass frame</h2>
-<p>In the centre-of-mass frame, the 4-momenta of incoming and outgoing particles are <span class="math display">\[
+<section id="in-centre-of-momentum-frame" class="slide level2" data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">
+<h2 data-background-image="images/bg/phase.jpg" data-background-opacity="0.3">In centre-of-momentum frame</h2>
+<p>In the centre-of-momentum frame, 4-momenta of incoming and outgoing particles are <span class="math display">\[
 \begin{array}{cccc}
-p = (E, \mathbf{p}) &amp;
-k = (\omega, \mathbf{k}) &amp; 
+p = (E, -\omega\mathbf{\hat{z}}) &amp;
+k = (\omega, \omega \mathbf{\hat{z}}) &amp; 
 p^\prime = (E, \mathbf{p}^\prime) &amp;
-k^\prime = (\omega^\prime, \mathbf{k}^\prime) &amp; 
+k^\prime = (\omega, \omega \sin{\theta}, 0, \omega \cos{\theta}) &amp; 
 \end{array}
-\]</span></p>
-<p>and the phase space integral takes the form <span class="math display">\[
+\]</span> and the phase space integral takes the form <span class="math display">\[
 \int \mathrm{d} \Pi_{2} = \frac{1}{16 \pi^{2}} \int \mathrm{d} \Omega
 \frac{\omega}{E_{\text{CoM}}}
 \]</span></p>
@@ -470,9 +469,9 @@ k^\prime = (\omega^\prime, \mathbf{k}^\prime) &amp;
 <p>Whereas in the lab frame, the 4-momenta are given by <span class="math display">\[
 \begin{array}{cccc}
 p = (m, 0) &amp;
-k = (\omega, \mathbf{k}) &amp; 
+k = (\omega, \omega\mathbf{\hat{z}}) &amp; 
 p^\prime = (E^\prime, \mathbf{p}^\prime) &amp;
-k^\prime = (\omega^\prime, \mathbf{k}^\prime) &amp; 
+k^\prime = (\omega^{\prime}, \omega^{\prime} \sin{\theta}, 0, \omega^{\prime} \cos{\theta}) &amp; 
 \end{array}
 \]</span></p>
 <p>and the phase space integral is obtained as</p>
@@ -494,7 +493,7 @@ k^\prime = (\omega^\prime, \mathbf{k}^\prime) &amp;
 </section>
 <section id="function-of-squared-momentum-transfer" class="slide level2" data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">
 <h2 data-background-image="images/bg/cross.jpg" data-background-opacity="0.3">Function of squared momentum transfer</h2>
-<p>We may now bring our equations for the phase space integral and the invariant amplitude together. Writing in terms of the Mandelstam variables in the centre-of-mass frame, we obtain <span class="math display">\[
+<p>We may now bring our equations for the phase space integral and the invariant amplitude together. Writing in terms of the Mandelstam variables in the centre-of-momentum frame, we obtain <span class="math display">\[
 \begin{aligned}
 \dfrac{\mathrm{d}\sigma\left(s, t\right)}{\mathrm{d}t}
 = \dfrac{2\pi\alpha^2}{\left(s - m^2\right)^2}

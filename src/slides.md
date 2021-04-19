@@ -303,7 +303,7 @@ quantities allows us to jump between frames with ease.
 
 :::
 
-## Centre-of-mass frame {
+## Centre-of-momentum frame {
 data-background-image='images/bg/theory.jpg'
 data-background-opacity=0.3
 .allowframebreaks
@@ -311,7 +311,7 @@ data-background-opacity=0.3
 
 Inertial frame in which sum of spatial momenta is zero.
 
-![Centre of mass frame diagram](images/com-frame.svg)
+![Centre-of-momentum frame diagram](images/com-frame.svg)
 
 ::: notes
 
@@ -376,8 +376,6 @@ of cross section wrt specific quantities, _eg._
 $\mathrm{d}\sigma / \mathrm{d}\cos\theta$.
 
 The phase space of an interaction carries its kinematic information.
-The Dirac delta, encoding momentum conservation, means that
-it is not Lorentz invariant.
 
 ::: notes
 
@@ -548,22 +546,21 @@ $$
 ::: notes
 
 :::
-## In centre-of-mass frame {
+## In centre-of-momentum frame {
 data-background-image='images/bg/phase.jpg'
 data-background-opacity=0.3
 }
 
-In the centre-of-mass frame, the 4-momenta of incoming and outgoing
+In the centre-of-momentum frame, 4-momenta of incoming and outgoing
 particles are
 $$
 \begin{array}{cccc}
-p = (E, \mathbf{p}) &
-k = (\omega, \mathbf{k}) & 
+p = (E, -\omega\mathbf{\hat{z}}) &
+k = (\omega, \omega \mathbf{\hat{z}}) & 
 p^\prime = (E, \mathbf{p}^\prime) &
-k^\prime = (\omega^\prime, \mathbf{k}^\prime) & 
+k^\prime = (\omega, \omega \sin{\theta}, 0, \omega \cos{\theta}) & 
 \end{array}
 $$
-
 and the phase space integral takes the form
 $$
 \int \mathrm{d} \Pi_{2} = \frac{1}{16 \pi^{2}} \int \mathrm{d} \Omega
@@ -583,9 +580,9 @@ Whereas in the lab frame, the 4-momenta are given by
 $$
 \begin{array}{cccc}
 p = (m, 0) &
-k = (\omega, \mathbf{k}) & 
+k = (\omega, \omega\mathbf{\hat{z}}) & 
 p^\prime = (E^\prime, \mathbf{p}^\prime) &
-k^\prime = (\omega^\prime, \mathbf{k}^\prime) & 
+k^\prime = (\omega^{\prime}, \omega^{\prime} \sin{\theta}, 0, \omega^{\prime} \cos{\theta}) & 
 \end{array}
 $$
 
@@ -617,7 +614,7 @@ data-background-opacity=0.3
 
 We may now bring our equations for the phase space integral and the invariant
 amplitude together. Writing in terms of the Mandelstam variables in the
-centre-of-mass frame, we obtain
+centre-of-momentum frame, we obtain
 $$
 \begin{aligned}
 \dfrac{\mathrm{d}\sigma\left(s, t\right)}{\mathrm{d}t}
