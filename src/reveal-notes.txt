@@ -1,5 +1,0 @@
-https://rajgoel.github.io/reveal.js-demos/chart-demo.html
-https://martinomagnifico.github.io/reveal.js-simplemenu/demo.html#/3/5
-https://gcalmettes.github.io/reveal.js-d3/demo/#/
-https://github.com/burnpiro/reveal-drawer
-https://rajgoel.github.io/reveal.js-demos/chalkboard-demo.html#/
