@@ -219,6 +219,14 @@ Expectation value of iT between two arbitrary states is:
 i M * (2π)^4 δ^4(Σpf - Σpi) = Σ connected, amput feyn diags with incoming
 mmtm pi and outg. mmtm pf
 
+Interpretation of diags:
+
+Left: either pair production, electron escapes, positron annihilates with
+incoming electron to produce photon, OR incoming electron emits then absorbs.
+
+Right: electron absorb then emits.
+
+
 __Feynman rules:__
 
 For fermions w/ mmtm p & spin s
@@ -322,6 +330,7 @@ Inertial frame in which sum of spatial momenta is zero.
 ![Centre-of-momentum frame diagram](images/com-frame.svg)
 
 ::: notes
+Scatter appears _elastic_ in this frame, as pcl and photon mmtm conserved.
 
 :::
 
@@ -337,7 +346,12 @@ rest frame for our particle detectors, hence _lab_ frame.
 ![Lab frame diagram](images/lab-frame.svg)
 
 ::: notes
+Scatter appears _inelastic_, as photon (incident pcl) mmtm changes.
 
+Compton's formula for photon shift calc'd by mass shell condition in this
+frame, _ie._
+
+1/ω' - 1/ω = (1 - cosθ) / m
 :::
 
 ## Differential cross section {
@@ -363,6 +377,10 @@ momentum conserving Dirac delta terms.
 
 ::: notes
 Fermi's golden rule relates invariant amplitude with cross section.
+
+More covariant form of denom:
+
+2Ea * 2Eb * |va - vb| = 4√[(pa . pb)^2 - (ma * mb)^2]
 :::
 
 ## Phase space integral {
