@@ -32,3 +32,5 @@ coverage.xml
 *.swp
 *.swo
 .vimrc
+
+recordings/
